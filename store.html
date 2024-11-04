@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ashley</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/store.css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="./js/script.js" defer></script>
+    </head>
+    <body>
+        <header id="header">
+            <h1 class="logo">
+                <a href="index.html"><i class="hidden">Ashley</i></a>
+            </h1>
+            <div class="util-menu">
+                <button class="btn-menu">
+                    <i class="hidden">메뉴</i
+                    ><span class="menu-bar"
+                        ><span class="bar1"></span><span class="bar2"></span><span class="bar3"></span
+                    ></span>
+                </button>
+            </div>
+            <div class="sns-list">
+                <button class="btn-instargram"><i class="hidden">인스타그램</i></button>
+                <button class="btn-facebook"><i class="hidden">페이스북</i></button>
+            </div>
+
+            <div class="gnb">
+                <figure>
+                    <img src="./img/gnb-img.jpg" alt="하와이안 버터갈릭 슈림프,스윗 갈릭 크런치 크랩" />
+                </figure>
+                <div class="gnb-menu">
+                    <nav>
+                        <ul class="main-menu">
+                            <li>
+                                <h3>브랜드 소개</h3>
+                                <ul class="sub-menu">
+                                    <li><a href="brand.html">브랜드 비전</a></li>
+                                    <li><a href="brand.html">브랜드 이념</a></li>
+                                    <li><a href="brand.html">브랜드 스토리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>메뉴</h3>
+                                <ul class="sub-menu">
+                                    <li><a href="menu.html">전체메뉴</a></li>
+                                    <li><a href="menu.html">애슐리 팁</a></li>
+                                    <li><a href="menu.html">식품정보</a></li>
+                                    <li><a href="menu.html">가격 안내</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>혜택</h3>
+                                <ul class="sub-menu">
+                                    <li><a href="rewards.html">SNS이벤트</a></li>
+                                    <li><a href="rewards.html">앱 사용 혜택</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>매장 찾기</h3>
+                                <ul class="sub-menu">
+                                    <li><a href="store.html">매장 리스트</a></li>
+                                    <li><a href="store.html">지도보기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>고객센터</h3>
+                                <ul class="sub-menu">
+                                    <li><a href="inquiry.html">FAQ</a></li>
+                                    <li><a href="inquiry.html">문의하기</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <button type="button" class="btn-close">
+                    <i class="hidden">close</i
+                    ><span class="close-bar"><span class="bar1"></span><span class="bar2"></span></span>
+                </button>
+                <a class="btn-main" href="index.html"><i class="hidden">Ashley</i></a>
+            </div>
+        </header>
+
+        <main id="main">
+            <!-- s: visual -->
+            <section class="visual">
+                <div class="inner">
+                    <strong class="bread">Home > 매장 찾기</strong>
+                    <div class="visual-title">
+                        <h2>Store</h2>
+                        <p>가까운 애슐리 매장을 손쉽게 찾아보고 다양한 정보를 확인해 보세요!</p>
+                    </div>
+                </div>
+                <figure class="visual-pic"><img src="./img/store-visual.jpg" alt="" /></figure>
+            </section>
+            <!-- //e: visual -->
+
+            <section class="map">
+                <div class="map-wrap">
+                    <div class="map-view">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.8458392856105!2d126.87670707635154!3d35.16046525840452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35718c0f40a3fc37%3A0xafead6869e477c15!2z7JWg7IqQ66as7YC47KaIIOq0keyjvOycoOyKpO2AmOyWtOygkA!5e0!3m2!1sko!2skr!4v1729476181182!5m2!1sko!2skr"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+                    <div class="map-search">
+                        <strong>매장 선택</strong>
+                        <div class="search">
+                            <input type="text" id="text" />
+                            <label for="text">매장명을 검색해주세요.</label>
+                            <button><i class="hidden">검색</i></button>
+                        </div>
+                        <div class="map-area">
+                            <select>
+                                <option value="">시/도 선택</option>
+                                <option value="">서울</option>
+                                <option value="">인천</option>
+                                <option value="">경기</option>
+                                <option value="">강원</option>
+                                <option value="">대전</option>
+                                <option value="">세종</option>
+                                <option value="">대구</option>
+                                <option value="">광주</option>
+                                <option value="">부산</option>
+                                <option value="">울산</option>
+                                <option value="">충북</option>
+                                <option value="">충남</option>
+                                <option value="">전북</option>
+                                <option value="">전남</option>
+                                <option value="">경북</option>
+                                <option value="">경남</option>
+                                <option value="">제주</option>
+                            </select>
+
+                            <select>
+                                <option value="">구/군 선택</option>
+                            </select>
+                        </div>
+                        <div class="map-filter">
+                            <strong>제공 서비스 선택</strong>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="fil-queens" />
+                                    <label for="fil-queens">ASHLEY QUEENS</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="fil-wine" />
+                                    <label for="fil-wine">와인 무제한</label>
+                                </li>
+                                <li>
+                                    <input class="on" type="checkbox" id="fil-beer" />
+                                    <label for="fil-beer">생맥주 무제한</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="fil-child" />
+                                    <label for="fil-child">키즈룸</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- ul.map-info>li*3>(dl>dt+dd*2)+ul.map-ico>li*3 -->
+                        <ul class="map-info">
+                            <li>
+                                <dl>
+                                    <dt>퀸즈 광주유스퀘어점</dt>
+                                    <dd>0507-1449-1063</dd>
+                                    <dd>광주광역시 서구 무진대로 904 유스퀘어(광천터미널) 2층</dd>
+                                </dl>
+                                <ul class="map-ico">
+                                    <li><i class="hidden">와인 무제한</i></li>
+                                    <li class="on"><i class="hidden">생맥주 무제한</i></li>
+                                    <li><i class="hidden">키즈룸</i></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>퀸즈 뉴코아 강남점</dt>
+                                    <dd>0507-1408-1063</dd>
+                                    <dd>서울시 서초구 잠원로 51 뉴코아아울렛 강남정 1관 5층 애슐리퀸즈</dd>
+                                </dl>
+                                <ul class="map-ico">
+                                    <li><i class="hidden">와인 무제한</i></li>
+                                    <li class="on"><i class="hidden">생맥주 무제한</i></li>
+                                    <li><i class="hidden">키즈룸</i></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>퀸즈 뉴코아 부천점</dt>
+                                    <dd>0507-1411-8405</dd>
+                                    <dd>경기도 부천시 송내대로 239 (상동) 부천뉴코아아울렛 4층</dd>
+                                </dl>
+                                <ul class="map-ico">
+                                    <li><i class="hidden">와인 무제한</i></li>
+                                    <li class="on"><i class="hidden">생맥주 무제한</i></li>
+                                    <li class="on"><i class="hidden">키즈룸</i></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>퀸즈 뉴코아 인천점</dt>
+                                    <dd>0507-1422-1033</dd>
+                                    <dd>인천광역시 남동구 인하로 485뉴코아 아울렛 인천점 9층</dd>
+                                </dl>
+                                <ul class="map-ico">
+                                    <li><i class="hidden">와인 무제한</i></li>
+                                    <li class="on"><i class="hidden">생맥주 무제한</i></li>
+                                    <li class="on"><i class="hidden">키즈룸</i></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+            <div class="inner">
+                <div class="foot-list">
+                    <ul class="foot-info">
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">영상정보처리기기운영·관리방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                    </ul>
+
+                    <div class="family">
+                        <button type="button" class="btn-family">FAMILY SITE</button>
+                        <ul class="family-list">
+                            <li><a href="#">리미니</a></li>
+                            <li><a href="#">피자몰</a></li>
+                            <li><a href="#">더카페</a></li>
+                            <li><a href="#">아시아문</a></li>
+                            <li><a href="#">홈스트랑</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="foot-con">
+                    <address>
+                        <strong>(주) 이랜드이츠</strong>
+                        <p>
+                            서울시 금천구 가산디지털1로 186, 213호(가산동) 제이플라츠 | 대표이사 : 황성윤<br />
+                            매장 이용관련 문의 및 불편사항 : 1577-1259 | 이메일 : elandfood@eland.co.kr<br />
+                            호스팅 서비스 제공자 : 라드씨엔에스
+                        </p>
+                        <p>Copyright &copy; 2013 ASHLEY</p>
+                    </address>
+                    <div class="accredit">
+                        <figure><img src="./img/isms.svg" alt="isms 인증마크" /></figure>
+                        <p>
+                            인증범위: 이랜드이츠 온라인 서비스<br />
+                            (애슐리, 캠페인서비스, 이랜드이츠, 자연별곡, 더카페)<br />
+                            인증기간: 2022. 08. 17 ~ 2025. 08. 16
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
