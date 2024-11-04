@@ -264,6 +264,7 @@ body {
 
 .tab-con {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-top: 9.6rem;
@@ -750,7 +751,11 @@ body {
     background: var(--main-color) url(../img/ico-map-child-w.png) no-repeat 50%;
 }
 
-@media (max-width: 1320px) {
+@media (max-width: 1800px) {
+    .inner {
+        width: 82.4219%;
+    }
+
     .map-wrap {
         flex-direction: column;
     }
@@ -772,5 +777,41 @@ body {
 
     .map-search {
         width: 100%;
+    }
+
+    .map-filter ul {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1000px) {
+    .inner {
+        width: 95%;
+    }
+
+    #header {
+        flex-direction: row;
+        width: 100vw;
+        height: 10rem;
+        padding: 0 3rem;
+        max-width: 100vw; /* 추가된 속성 */
+        background: transparent;
+    }
+
+    .logo a {
+        background-image: url(../img/logo-w.svg);
+        transform: rotate(0deg);
+    }
+
+    .sns-list {
+        display: none;
+    }
+
+    .btn-menu {
+        background: transparent;
+    }
+
+    .menu-bar span {
+        background: var(--white100);
     }
 }

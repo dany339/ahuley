@@ -36,7 +36,8 @@
 
 .slider-menu-wrap {
     /* background: #ff5; */
-    padding: 23.8rem 0;
+    /* padding: 23.8rem 0; */
+    padding: 12.3958vw 0;
     display: flex;
     gap: 2rem;
     /* border: 1px solid #000; */
@@ -62,13 +63,12 @@
 
 .menu-text-card h3 {
     font: 13.5rem/1.4 "Dancing Script", sans-serif;
-    font-size: calc(8rem, 0.5279vw, 13.5rem);
     font-weight: 700;
     color: var(--main-color);
 }
 
 .menu-text-card p {
-    width: 44.7rem;
+    width: 23.2813vw;
     margin-top: 0.7rem;
     word-break: keep-all;
 }
@@ -80,14 +80,14 @@
 .menu-con-slider {
     /* border: 1px solid #f00; */
     /* width: 1000px; */
-    width: 49.4792vw;
+    width: 50vw;
+    height: 52.4rem;
 }
 
 .menu-card {
     position: relative;
     width: 42.7rem;
     /* width: 22.2396vw; */
-    /* height: 52.4rem; */
     aspect-ratio: 1/1.2272;
     border-radius: 10px;
     overflow: hidden;
@@ -124,29 +124,25 @@
     opacity: 0;
 }
 
+.event .view-more {
+    margin-left: 2rem;
+}
+
 .event-list {
     margin-top: 2rem;
 }
 
-.event-swiper {
-    display: flex;
-    gap: 2rem;
-    margin-top: 2.6rem;
-}
-
-.event-swiper .swiper-slide {
-    box-shadow: 5px 6px 11px rgba(0, 0, 0, 0.25);
-}
-
 .event-swiper figure {
+    margin-top: 2.6rem;
     /* width: 37.8rem; */
-    width: 19.6875vw;
-    min-width: 26rem;
+    /* width: 19.6875vw; */
+    width: 100%;
     aspect-ratio: 1/1.09259;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
     cursor: none;
+    box-shadow: 5px 6px 11px rgba(0, 0, 0, 0.25);
 }
 
 .event-swiper figure::after {
@@ -167,7 +163,8 @@
 
 .map {
     /* height: 100vh; */
-    margin-top: 28rem;
+    /* margin-top: 28rem; */
+    margin-top: 14.5833vw;
 }
 
 .map-wrap {
@@ -189,7 +186,8 @@
     margin-top: 8rem;
     position: relative;
     /* background: #ff5; */
-    padding: 26rem 0 38rem 0;
+    /* padding: 26rem 0 38rem 0; */
+    padding: 13.5417vw 0 19.7917vw 0;
 }
 
 .app-download::before {
@@ -197,6 +195,7 @@
     display: block;
     /* width: 37.5rem; */
     width: 20vw;
+    min-width: 24rem;
     /* height: 55.2rem; */
     aspect-ratio: 1/1.472;
     background: url(../img/phone-pic.jpg) no-repeat 50% / contain;
@@ -210,6 +209,7 @@
     display: block;
     /* width: 53.2rem; */
     width: 27.7083vw;
+    min-width: 33rem;
     /* height: 40.4rem; */
     aspect-ratio: 1/0.7594;
     background: url(../img/letter-pic.png) no-repeat 50% / contain;
@@ -286,7 +286,6 @@
     /* height: 100vh; */
     padding: 10.6rem 0 10.2rem 0;
     background: var(--main-color);
-    padding: 10.2rem;
 }
 
 .app-benefit .sec-title {
@@ -313,7 +312,7 @@
 }
 
 .app-con li {
-    width: 37.7rem;
+    width: 37.5rem;
     height: 29.6rem;
     display: flex;
     align-items: flex-end;
@@ -383,18 +382,24 @@
     }
 }
 
-@media (max-width: 1320px) {
+@media (max-width: 1800px) {
     .map-view {
         width: 100%;
     }
+    .menu-text-card h3 {
+        font-size: 9rem;
+    }
 
-    .app-con li {
+    .menu-text-card p {
         width: 100%;
-        justify-content: center;
     }
 
     .app-txt {
         width: 60%;
+    }
+
+    .app-txt p {
+        width: 100%;
     }
 
     .app-download::before {
@@ -403,10 +408,90 @@
 
     .app-download::after {
         top: 47rem;
-        right: 21rem;
+        right: 20vw;
+    }
+}
+
+@media (max-width: 1320px) {
+    .main-title {
+        width: 50vw;
+        min-width: 35rem;
+    }
+
+    .app-con li {
+        width: 100%;
+        justify-content: center;
     }
 
     .app-benefit .view-more {
         margin-top: 2rem;
+    }
+
+    .app-txt {
+        width: 100%;
+    }
+
+    .app-txt p {
+        width: 100%;
+    }
+
+    .app-download::before {
+        display: none;
+    }
+    .app-download::after {
+        display: none;
+    }
+
+    .slider-menu-wrap {
+        flex-wrap: wrap;
+    }
+
+    .menu-text-card {
+        text-align: center;
+    }
+
+    .menu-text-card p {
+        width: 80%;
+        margin: 0.7rem auto 0 auto;
+    }
+
+    .menu-text-card .btn-more {
+        margin: 6rem auto 0 auto;
+    }
+
+    .menu-card {
+        width: 100%;
+    }
+
+    .menu-con-slider-wrap {
+        width: 100%;
+    }
+
+    .menu-con-slider {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .event .view-more {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        border: 2px solid var(--main-color);
+        color: transparent;
+        position: relative;
+    }
+
+    .event .view-more:hover {
+        color: transparent;
+    }
+
+    .event .view-more::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url(../img/arrow-m-right.png) no-repeat 0% 50%;
     }
 }

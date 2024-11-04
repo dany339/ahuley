@@ -91,15 +91,29 @@ if ($(".menu-con-slider").length) {
         },
     });
 }
-
 // event swiper(MAIN)
 if ($(".event-swiper").length) {
     const $eventSwiper = new Swiper(".event-swiper", {
-        slidesPerView: 4.9,
-        spaceBetween: 20,
         loop: true,
+        slidesPerView: "1",
+        spaceBetween: 20,
         autoplay: {
             delay: 1000,
+        },
+
+        breakpoints: {
+            600: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            800: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1300: {
+                slidesPerView: 4.9,
+                spaceBetween: 20,
+            },
         },
     });
 }
