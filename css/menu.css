@@ -118,6 +118,10 @@
     overflow: hidden;
 }
 
+.menu-list li:hover img {
+    transform: scale(110%);
+}
+
 .menu-list li p {
     margin-top: 1.5rem;
     padding: 0 2rem;

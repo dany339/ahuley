@@ -221,10 +221,6 @@
     animation: move 2s infinite ease-in-out;
 }
 
-.app-txt {
-    /* background: #5f5; */
-}
-
 .app-txt p {
     width: 63.7rem;
     margin-top: 3rem;

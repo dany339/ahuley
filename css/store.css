@@ -11,6 +11,7 @@
     font-size: 2rem;
     font-weight: 700;
     color: var(--main-color);
+    overflow: hidden;
 }
 
 .map-view iframe {
@@ -26,9 +27,10 @@
     padding: 0 2.8rem;
     background: var(--white100);
     box-shadow: 0px -30px 30px rgba(14, 33, 27, 0.15);
+    transition: transform 0.4s ease;
 }
 
-.map-search::before {
+.btn-fold {
     content: "";
     position: absolute;
     top: 50%;
@@ -38,6 +40,14 @@
     background: var(--white100) url(../img/arrow-m-right.png) no-repeat 30% 50%;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.map-search.on {
+    transform: translateX(100%); /* 오른쪽으로 밀려나게 설정 */
+}
+
+.map-search.on .btn-fold {
+    background-image: url(../img/arrow-m-left.png);
 }
 
 .map-search > strong {

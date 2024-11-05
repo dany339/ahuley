@@ -206,12 +206,27 @@
 .f-row:last-child::after {
     content: "";
     position: absolute;
-    width: 5rem;
-    aspect-ratio: 1/1;
-    top: 25%;
+    width: 2rem;
+    height: 2px;
+    top: 50%;
+    transform: translateY(-50%);
     right: 3rem;
-    pointer-events: none;
+    cursor: pointer;
     user-select: none;
+    background: var(--text-color);
+}
+
+.f-row:last-child::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3.9rem;
+    cursor: pointer;
+    user-select: none;
+    background: var(--text-color);
 }
 
 .question .btn-more {

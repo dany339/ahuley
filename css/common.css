@@ -8,10 +8,13 @@
     --main-color80: rgba(14, 33, 47, 0.8);
     --main-color70: rgba(14, 33, 47, 0.7);
     --main-color60: rgba(14, 33, 47, 0.6);
+    --main-color40: rgba(14, 33, 47, 0.4);
+    --main-color15: rgba(14, 33, 47, 0.15);
     --main-color10: rgba(14, 33, 47, 0.1);
     --title-color: #333333;
     --text-color: #666666;
     --white100: rgba(255, 255, 255, 1);
+    --white70: rgba(255, 255, 255, 0.7);
     --white50: rgba(255, 255, 255, 0.5);
     --white40: rgba(255, 255, 255, 0.4);
     --white10: rgba(255, 255, 255, 0.1);

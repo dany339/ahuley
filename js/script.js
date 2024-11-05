@@ -263,3 +263,102 @@ $question.on("click", function () {
     // 선택한 놈의 자손중 답변을 찾아서 슬라이드 토글
     $(this).find($answer).stop().slideToggle(duration);
 });
+
+/* REWARDS!!!---------------------------------------------- */
+
+const $snsTabMenu = $(".sns-tab > li");
+const $snsTabCon = $(".sns .sns-list");
+
+snsTabAction(1);
+
+$snsTabMenu.on("click", function (e) {
+    e.preventDefault();
+
+    const snsTabIdx = $(this).index();
+    console.log(snsTabIdx);
+
+    snsTabAction(snsTabIdx);
+});
+
+// 공통의 동작을 함수로 정의
+function snsTabAction(index) {
+    // 탭메뉴 활성화
+    $snsTabMenu.removeClass("on");
+    $snsTabMenu.eq(index).addClass("on");
+
+    // 인덱스에 해당하는 $tabCon 보이기
+    $snsTabCon.hide();
+    $snsTabCon.eq(index).show();
+}
+
+const $appTabMenu = $(".app-tab > li");
+const $appTabCon = $(".app-con");
+
+appTabAction(0);
+
+$appTabMenu.on("click", function (e) {
+    e.preventDefault();
+
+    const appTabIdx = $(this).index();
+    console.log(appTabIdx);
+
+    appTabAction(appTabIdx);
+});
+
+function appTabAction(index) {
+    $appTabMenu.removeClass("on");
+    $appTabMenu.eq(index).addClass("on");
+
+    $appTabCon.hide();
+    $appTabCon.eq(index).show();
+}
+
+const $rewardTabMenu = $(".reward-tab > li");
+const $rewardTabCon = $(".reward-list");
+
+rewardTabAction(0);
+
+$rewardTabMenu.on("click", function (e) {
+    e.preventDefault();
+
+    const rewardTabIdx = $(this).index();
+    console.log(rewardTabIdx);
+
+    rewardTabAction(rewardTabIdx);
+});
+
+function rewardTabAction(index) {
+    $rewardTabMenu.find("a").removeClass("on");
+    $rewardTabMenu.eq(index).find("a").addClass("on");
+
+    $rewardTabCon.hide();
+    $rewardTabCon.eq(index).show();
+}
+
+// rewards.html의 캐릭터 고정
+
+const $footerSection = $("footer");
+
+$footerSection.on("mouseenter", function () {
+    $(".app-store figure").addClass("on");
+});
+
+$footerSection.on("mouseleave", function () {
+    $(".app-store figure").removeClass("on");
+});
+
+/* MAP!!!---------------------------------------------- */
+// $(".map-search::before").on("click", function (e) {
+//     // 클릭한 대상이 strong 요소인지 확인
+//     if ($(e.target).is("strong")) {
+//         // strong 요소를 클릭했을 때
+//         $(this).toggleClass("on"); // on 클래스 토글
+//     }
+// });
+
+const $mapSearch = $(".map-search");
+const $btnFold = $(".btn-fold");
+
+$btnFold.on("click", function () {
+    $mapSearch.toggleClass("on"); // Toggle the 'on' class for .map-search
+});
