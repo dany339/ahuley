@@ -348,13 +348,6 @@ $footerSection.on("mouseleave", function () {
 });
 
 /* MAP!!!---------------------------------------------- */
-// $(".map-search::before").on("click", function (e) {
-//     // 클릭한 대상이 strong 요소인지 확인
-//     if ($(e.target).is("strong")) {
-//         // strong 요소를 클릭했을 때
-//         $(this).toggleClass("on"); // on 클래스 토글
-//     }
-// });
 
 const $mapSearch = $(".map-search");
 const $btnFold = $(".btn-fold");
@@ -362,3 +355,85 @@ const $btnFold = $(".btn-fold");
 $btnFold.on("click", function () {
     $mapSearch.toggleClass("on"); // Toggle the 'on' class for .map-search
 });
+
+/* BRAND!!!---------------------------------------------- */
+
+// const ideologyTl = gsap.timeline({
+//     defaults: { autoAlpha: 0, duration: 3, ease: "none" },
+
+//     scrollTrigger: {
+//         trigger: ".ideology",
+//         markers: true,
+//         start: "60% 50%",
+//         end: "bttom+=2000 0%",
+//         scrub: 1,
+
+//         pin: true,
+//     },
+// });
+
+// ideologyTl.from(".ideology .ideology-con", { y: 200 });
+// ideologyTl.to(".fake", { x: 1, duration: 20 });
+
+gsap.registerPlugin(ScrollTrigger);
+
+// 돌려돌려 돌림판~~~!!
+
+const ideologyTl = gsap.timeline({
+    defaults: { autoAlpha: 0, duration: 3, ease: "none" },
+
+    scrollTrigger: {
+        trigger: ".ideology",
+        // markers: true,
+        start: "67% 50%",
+        end: "bottom+=9000 0%", // wrap 애니메이션의 지속 시간에 맞게 조정
+        scrub: 1,
+        pin: true,
+    },
+});
+
+const wrapTl = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".wrap",
+        start: "bottom 10%",
+        ease: "none",
+    },
+});
+
+// 초기 회전 상태를 45도로 설정
+gsap.set(".wrap", { rotation: -27 });
+
+wrapTl.to(".wrap", {
+    rotation: "360deg",
+    ease: "none",
+    scrollTrigger: {
+        start: "top top",
+        scrub: 1,
+    },
+});
+
+// 브랜드 스토리!!!---
+
+const storyTl = gsap.timeline({
+    defaults: { autoAlpha: 0, duration: 3, ease: "none" },
+
+    scrollTrigger: {
+        trigger: ".story",
+        // markers: true,
+        start: "60% 60%",
+        end: "bottom+=1000 0%" /* 바닥에서 1000px 이동한 지점이 끝나는 지점 */,
+        scrub: 1, // 스크롤바를 따라잡는데 걸리는 시간 1초
+
+        pin: true, // 트리거(영역)를 고정, 애니메이션 끝날 때까지 뷰포트 고정시키는 그거!!!!!
+    },
+});
+
+storyTl.from(".story .sec-title", { x: 200 });
+storyTl.from(".p1", { x: 200 });
+storyTl.from(".p2", { x: 200 });
+storyTl.from(".p3", { x: 200 });
+storyTl.from(".p4", { x: 200 });
+storyTl.from(".p5", { x: 200 });
+storyTl.from(".p6", { x: 200 });
+
+storyTl.to(".fake", { x: 1, duration: 10 });

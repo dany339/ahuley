@@ -124,12 +124,18 @@
     opacity: 0;
 }
 
+.event .tab-con {
+    margin-top: 4vw;
+}
+
 .event .view-more {
     margin-left: 2rem;
 }
 
 .event-list {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
+    margin-top: 1.0417vw;
+    padding: 0 2rem;
 }
 
 .event-swiper figure {
@@ -224,6 +230,7 @@
 .app-txt p {
     width: 63.7rem;
     margin-top: 3rem;
+    word-break: keep-all;
 }
 
 .app-store {
@@ -428,7 +435,7 @@
     }
 
     .app-txt p {
-        width: 100%;
+        width: 80%;
     }
 
     .app-download::before {
@@ -489,5 +496,19 @@
         left: 50%;
         transform: translate(-50%, -50%);
         background: url(../img/arrow-m-right.png) no-repeat 0% 50%;
+    }
+
+    .app-txt p {
+        width: 100%;
+    }
+
+    .map-search {
+        padding: 0 5rem;
+    }
+}
+
+@media (max-width: 780px) {
+    .map-search {
+        padding: 0 2rem;
     }
 }
