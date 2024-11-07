@@ -3,31 +3,41 @@
 .menu-title {
     margin: 0 auto;
     text-align: center;
-    width: 70.5rem;
-    margin-top: 8rem;
+    /* width: 70.5rem; */
+    width: 60%;
+    margin-top: 12rem;
+    word-break: keep-all;
 }
 
 .menu-title h3 {
-    font: 13.5rem/1.5 "Dancing Script", sans-serif;
+    font: 13.5rem/0.8 "Dancing Script", sans-serif;
+    font-size: clamp(8.5rem, 7.0313vw, 13.5rem);
     font-weight: 700;
     color: var(--main-color);
 }
 
+.menu-title p {
+    margin-top: 6%;
+}
+
 .menu-tab {
     display: flex;
-    gap: 2.5rem;
+    /* gap: 2.5rem; */
+    gap: 1.8939%;
     justify-content: center;
     margin-top: 6.5rem;
+    flex-shrink: 0;
+    overflow: hidden;
 }
 
 .menu-tab li {
-    display: block;
-    width: 11rem;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 11rem;
+    min-width: 9.6rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
 
     border: 2px solid var(--main-color);
 }
@@ -102,13 +112,12 @@
 .menu-tab li:hover a {
     color: var(--white100);
 }
-
 .menu-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    flex-wrap: wrap;
-    margin-top: 8.5rem;
-    gap: 5rem;
+    grid-template-columns: repeat(auto-fill, minmax(27.5rem, 1fr));
+    /* margin-top: 8.5rem; */
+    margin-top: 4.4271rem;
+    gap: 2.6042vw;
 }
 
 .menu-list li figure {
@@ -133,7 +142,7 @@
 }
 
 .menu-con .btn-more {
-    margin: 12rem auto 0 auto;
+    margin: 9.0909% auto 0 auto;
     background: var(--main-color);
     color: var(--white100);
 }
@@ -156,11 +165,11 @@
 }
 
 .tip .sec-title {
-    margin-top: 20rem;
+    margin-top: 10.4167vw;
 }
 
 .tip-list {
-    margin-top: 10rem;
+    margin-top: 7.5758%;
     display: flex;
     justify-content: space-between;
     gap: 2rem;
@@ -169,7 +178,7 @@
 .tip-list li {
     /* border: 1px solid #000; */
     width: 31.5rem;
-    height: 53rem;
+    aspect-ratio: 1/1.6825;
     padding: 3rem;
     word-break: keep-all;
     border-radius: 10px;
@@ -214,7 +223,8 @@
 }
 
 .tip-list li strong {
-    font-size: 2.8rem;
+    /* font-size: 2.8rem; */
+    font-size: clamp(2.4rem, 8.8888%, 2.8rem);
     font-weight: 700;
     color: var(--white100);
     position: relative;
@@ -233,7 +243,8 @@
 }
 
 .tip-list li:hover strong {
-    font-size: 3rem;
+    /* font-size: 3rem; */
+    font-size: clamp(2.6rem, 9%, 3rem);
     top: 35%;
 }
 
@@ -243,11 +254,12 @@
 }
 
 .allergie-txt {
-    margin-top: 20rem;
+    margin-top: 10.4167vw;
 }
 
 .allergie-txt p {
-    margin-top: 3rem;
+    margin-top: 2.2727vw;
+    /* margin-top: 3rem; */
     width: 50%;
 }
 
@@ -287,7 +299,8 @@
     text-align: center;
     opacity: 0;
     transition: 0.4s;
-    font-size: 3rem;
+    /* font-size: 3rem; */
+    font-size: clamp(2.4rem, 14.7783%, 3rem);
     font-weight: 700;
     z-index: 1;
     width: 100%;
@@ -296,6 +309,7 @@
 
 .allergie-item i {
     font-size: 1.8rem;
+    font-size: clamp(1.5rem, 8.867%, 1.8rem);
     font-weight: 400;
 }
 
@@ -312,11 +326,17 @@
 }
 
 .price .sec-title {
-    margin-top: 20rem;
+    margin-top: 10.4167vw;
+}
+
+.price .tab-con {
+    margin-top: 5vw;
+    overflow: hidden;
 }
 
 .price-con-item {
-    margin-top: 7.7rem;
+    /* margin-top: 7.7rem; */
+    margin-top: 3.0104vw;
     text-align: center;
 }
 
@@ -351,7 +371,7 @@
 
 .details {
     display: block;
-    margin: 8rem 0;
+    margin: 4.167vw 0;
 }
 
 .details li {
@@ -364,4 +384,86 @@
 .details li strong {
     font-weight: 700;
     color: var(--black50);
+}
+
+@media (max-width: 1200px) {
+    .menu-title {
+        width: 80%;
+    }
+
+    .tip .sec-title {
+        margin-top: 10rem;
+    }
+
+    .tip-list {
+        flex-direction: column;
+    }
+
+    .tip-list li {
+        width: 100%;
+        aspect-ratio: 1/0.3333;
+    }
+
+    .tip-list li strong {
+        top: 80%;
+    }
+
+    .tip-list li p {
+        margin-top: 2%;
+    }
+
+    .allergie-txt {
+        margin-top: 10rem;
+    }
+
+    .allergie-txt p {
+        width: 80%;
+    }
+
+    .allergie .view-more {
+        margin-top: 2rem;
+    }
+
+    .price .sec-title {
+        margin-top: 15rem;
+    }
+
+    .details li {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-list {
+        grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+    }
+
+    .tip-list li {
+        width: 100%;
+        aspect-ratio: 1/0.5;
+    }
+
+    .tip-list li:hover strong {
+        top: 8vw;
+    }
+
+    .tip-list li:hover p {
+        top: 8vw;
+    }
+
+    .allergie-txt p {
+        width: 100%;
+    }
+
+    .price .tab-con {
+        margin-top: 4rem;
+    }
+
+    .price-con-item {
+        margin-top: 2rem;
+    }
+
+    .details li {
+        width: 100%;
+    }
 }

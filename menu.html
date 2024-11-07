@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Ashley</title>
+        <link rel="icon" href="./img/favicon.png" type="image/png" />
 
         <!-- 기본 SEO 메타 태그 -->
         <meta
@@ -41,6 +42,8 @@
         <link rel="stylesheet" href="./css/menu.css" />
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
         <script src="./js/jquery-3.7.1.min.js"></script>
         <script src="./js/script.js" defer></script>
     </head>
@@ -72,47 +75,47 @@
                             <li>
                                 <h3><a href="brand.html">브랜드 소개</a></h3>
                                 <ul class="sub-menu">
-                                    <li><a href="brand.html">브랜드 비전</a></li>
-                                    <li><a href="brand.html">브랜드 이념</a></li>
-                                    <li><a href="brand.html">브랜드 스토리</a></li>
+                                    <li><a href="brand.html#vision">브랜드 비전</a></li>
+                                    <li><a href="brand.html#ideology">브랜드 이념</a></li>
+                                    <li><a href="brand.html#story">브랜드 스토리</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <h3><a href="menu.html">메뉴</a></h3>
                                 <ul class="sub-menu">
-                                    <li><a href="menu.html">전체메뉴</a></li>
-                                    <li><a href="menu.html">애슐리 팁</a></li>
-                                    <li><a href="menu.html">식품정보</a></li>
-                                    <li><a href="menu.html">가격 안내</a></li>
+                                    <li><a href="menu.html#menu">전체메뉴</a></li>
+                                    <li><a href="menu.html#tip">애슐리 팁</a></li>
+                                    <li><a href="menu.html#allergie">식품정보</a></li>
+                                    <li><a href="menu.html#price">가격 안내</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <h3><a href="rewards.html">혜택</a></h3>
                                 <ul class="sub-menu">
-                                    <li><a href="rewards.html">SNS이벤트</a></li>
-                                    <li><a href="rewards.html">앱 사용 혜택</a></li>
+                                    <li><a href="rewards.html#sns">SNS이벤트</a></li>
+                                    <li><a href="rewards.html#app">앱 사용 혜택</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <h3><a href="store.html">매장 찾기</a></h3>
                                 <ul class="sub-menu">
-                                    <li><a href="store.html">매장 리스트</a></li>
-                                    <li><a href="store.html">지도보기</a></li>
+                                    <li><a href="store.html#map">매장 리스트</a></li>
+                                    <li><a href="store.html#map">지도보기</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <h3><a href="inquiry.html">고객센터</a></h3>
                                 <ul class="sub-menu">
-                                    <li><a href="inquiry.html">FAQ</a></li>
-                                    <li><a href="inquiry.html">문의하기</a></li>
+                                    <li><a href="inquiry.html#faq">FAQ</a></li>
+                                    <li><a href="inquiry.html#question">문의하기</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </nav>
                 </div>
                 <button type="button" class="btn-close">
-                    <span class="close-bar"><span class="bar1"></span><span class="bar2"></span></span>
-                    <i class="hidden">close</i>
+                    <i class="hidden">close</i
+                    ><span class="close-bar"><span class="bar1"></span><span class="bar2"></span></span>
                 </button>
                 <a class="btn-main" href="index.html"><i class="hidden">Ashley</i></a>
             </div>
@@ -133,7 +136,7 @@
             <!-- //e: visual -->
 
             <!-- s: menu -->
-            <section class="menu">
+            <section class="menu" id="menu">
                 <div class="inner">
                     <div class="menu-title">
                         <h3>Season's menu</h3>
@@ -211,7 +214,7 @@
             <!-- //e: menu -->
 
             <!-- s: tip -->
-            <section class="tip">
+            <section class="tip" id="tip">
                 <!-- .inner>(.sec-title>strong+h3)+ul.tip-list>li*4>strong+p -->
                 <div class="inner">
                     <div class="sec-title">
@@ -241,7 +244,7 @@
             <!-- //e: tip -->
 
             <!-- s: allergie -->
-            <section class="allergie">
+            <section class="allergie" id="allergie">
                 <!-- .inner>(.allergie-txt>(.sec-title>strong+h3)+p+a.view-more)+.sllergie-slider-wrap>.allergie-list>.allergie-item*14>(figure>img)+strong -->
                 <div class="inner">
                     <div class="allergie-txt">
@@ -323,7 +326,7 @@
             <!-- //e: allergie -->
 
             <!-- s: price -->
-            <section class="price">
+            <section class="price" id="price">
                 <!-- .inner>(.sec-title>strong+h3)+(ul.price-tab>li>a)+.price-con>.price-con-item -->
                 <div class="inner">
                     <div class="sec-title">

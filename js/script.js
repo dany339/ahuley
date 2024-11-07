@@ -24,6 +24,26 @@ if ($(".btn-family").length && $(".family-list").length) {
     });
 }
 
+// 비주얼 이미지 나타나기~
+gsap.registerPlugin(ScrollTrigger);
+
+const mainPic = $(".main-pic");
+const mainTitle = $(".main-title");
+const mainTl = gsap.timeline({ defaults: { duration: 1, ease: "power4.inOut" } });
+
+mainTl.from(mainPic, { scale: 0.3 });
+mainTl.from(mainTitle, { y: 200, autoAlpha: 0 }, "-=0.3");
+
+// 1. visual 영역 애니메이션
+const visualPic = $(".visual-pic").get(0);
+
+const visualTl = gsap.timeline({ defaults: { duration: 1, ease: "power4.inOut" } });
+visualTl.from(visualPic, { scale: 3, filter: "blur(30px)", duration: 2 });
+
+visualTl.from(".visual-title h2", { y: 100, autoAlpha: 0 }, "-=0.9");
+visualTl.from(".visual-title p", { y: 100, autoAlpha: 0 }, "-=0.6");
+visualTl.from(".bread", { y: 50, autoAlpha: 0 }, "-=0.6");
+
 /* MAIN!!!---------------------------------------------- */
 
 // cursor 기능(MAIN)
@@ -182,7 +202,7 @@ function menuTabAction(index) {
 // allergie swiper(MENU)
 if ($(".allergie-slider").length) {
     const allergieSwiper = new Swiper(".allergie-slider", {
-        slidesPerView: 6,
+        slidesPerView: 3,
         spaceBetween: 20,
         loop: true,
         autoplay: {
@@ -192,8 +212,38 @@ if ($(".allergie-slider").length) {
             el: ".allergie-slider-wrap .swiper-pagination",
             type: "fraction",
         },
+
+        breakpoints: {
+            1100: {
+                slidesPerView: 6,
+                spaceBetween: 20,
+            },
+            700: {
+                slidesPerView: 5,
+                spaceBetween: 20,
+            },
+        },
     });
 }
+if ($(".menu-list li")) {
+    const $menuList = $(".menu-list");
+    $menuList.on("click", function () {
+        $(this).toggleClass("on", 400);
+    });
+}
+
+const $menuItem = $(".menu-list li");
+const $menuList = $(".menu-list");
+
+$menuItem.on("click", function () {
+    $(menuList).toggleClass("on");
+
+    $(menuList).siblings().find($menuItem).stop().slideUp(duration);
+
+    // $(this).find($answer).slideDown(duration);
+    // 선택한 놈의 자손중 답변을 찾아서 슬라이드 토글
+    $(menuList).find($menuItem).stop().slideToggle(duration);
+});
 
 // price tab(MENU)
 const $priceTabMenu = $(".price-tab > li");
@@ -357,8 +407,6 @@ $btnFold.on("click", function () {
 });
 
 /* BRAND!!!---------------------------------------------- */
-
-gsap.registerPlugin(ScrollTrigger);
 
 // 돌려돌려 돌림판~~~!!
 

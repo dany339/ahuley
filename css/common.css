@@ -72,6 +72,7 @@ iframe {
 
 body {
     font: 2.2rem/1.4 "Pretendard", sans-serif;
+    font-size: clamp(2rem, 1.1458vw, 2.2rem);
     color: var(--text-color);
     overflow-x: hidden;
 }
@@ -583,10 +584,17 @@ body {
 }
 
 /* 서브 비쥬얼 타이틀 공용! */
+.visual {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
 .visual-title {
     position: absolute;
-    top: 27%;
-    left: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: var(--white100);
     text-align: center;
     z-index: 1;
@@ -594,12 +602,14 @@ body {
 
 .visual-title h2 {
     font: 17.5rem/1.5 "Dancing Script", sans-serif;
+    font-size: clamp(10.5rem, 9.1146vw, 17.5rem);
     font-weight: 700;
 }
 
 .visual-title p {
     width: 56rem;
     font-size: 3rem;
+    font-size: clamp(2.2rem, 1.5625vw, 3rem);
     font-weight: 500;
     margin: 0 auto;
     margin-top: 1rem;
@@ -628,7 +638,8 @@ body {
 .bread {
     position: absolute;
     top: 15.6rem;
-    left: 30rem;
+    /* left: 30rem; */
+    left: 15.625vw;
     z-index: 1;
     color: var(--white100);
     font-size: 1.8rem;
@@ -679,7 +690,19 @@ body {
 }
 
 .map-area select {
-    width: 26.9rem;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.map-area div {
+    position: relative;
+    /* width: 26.9rem; */
+    width: 14.0104vw;
     max-height: 5.5rem;
     min-height: 5rem;
     aspect-ratio: 1/0.2045;
@@ -688,10 +711,20 @@ body {
     margin-top: 1.5354vw;
     border: 2px solid var(--main-color);
     border-radius: 5px;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--main-color);
-    text-align: center;
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+.map-area div::after {
+    content: "";
+    width: 1.2rem;
+    aspect-ratio: 1/1;
+    background: url(../img/arrow-m-bottom.png) no-repeat 50% / contain;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 27%;
 }
 
 .map-filter {
@@ -801,10 +834,13 @@ body {
         margin-top: 1rem;
     }
 
-    .map-area select {
+    .map-area div {
         width: 48%;
     }
 
+    .map-area div::after {
+        right: 38%;
+    }
     .map-search {
         width: 100%;
     }
@@ -855,6 +891,10 @@ body {
 
     .btn-main {
         left: 18%;
+    }
+
+    .map-area div::after {
+        right: 30%;
     }
 }
 
@@ -948,5 +988,9 @@ body {
 
     .map-filter ul {
         justify-content: center;
+    }
+
+    .map-area div::after {
+        right: 15%;
     }
 }

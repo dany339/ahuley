@@ -1,10 +1,5 @@
 @charset 'utf-8';
 
-/* 서브 비쥬얼 타이틀 공용! */
-.visual-title {
-    left: 33%;
-}
-
 .sns .sec-title {
     margin-top: 18rem;
 }
