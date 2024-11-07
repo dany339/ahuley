@@ -358,23 +358,6 @@ $btnFold.on("click", function () {
 
 /* BRAND!!!---------------------------------------------- */
 
-// const ideologyTl = gsap.timeline({
-//     defaults: { autoAlpha: 0, duration: 3, ease: "none" },
-
-//     scrollTrigger: {
-//         trigger: ".ideology",
-//         markers: true,
-//         start: "60% 50%",
-//         end: "bttom+=2000 0%",
-//         scrub: 1,
-
-//         pin: true,
-//     },
-// });
-
-// ideologyTl.from(".ideology .ideology-con", { y: 200 });
-// ideologyTl.to(".fake", { x: 1, duration: 20 });
-
 gsap.registerPlugin(ScrollTrigger);
 
 // 돌려돌려 돌림판~~~!!
@@ -411,6 +394,49 @@ wrapTl.to(".wrap", {
         scrub: 1,
     },
 });
+
+const sliders = document.querySelectorAll(".ideology-txt"); // 모든 슬라이드 선택
+let currentIndex = 0; // 현재 슬라이드 인덱스
+
+function showSlide(index) {
+    sliders.forEach((slider, i) => {
+        // 슬라이드 이동을 자연스러운 트렌지션 효과로 변경
+        slider.style.transition = "transform 0.3s ease-in-out, opacity 0.3s ease-in-out";
+        slider.style.transform = `translateX(${(i - index) * 100}%)`; // 슬라이드 이동
+    });
+}
+
+window.addEventListener("scroll", () => {
+    const ideologyOffset = document.querySelector(".ideology").offsetTop + 1000; // ideology 섹션의 시작 위치
+    const scrollY = window.scrollY - ideologyOffset; // ideology 섹션부터의 스크롤 위치
+    const slideHeight = 2000; // 슬라이드가 나타나는 높이 (1000px)
+
+    // 스크롤 위치에 따라 슬라이드 인덱스 업데이트
+    if (scrollY >= slideHeight * (currentIndex + 1)) {
+        if (currentIndex === 2) {
+            // 3번째 인덱스를 건너뛰고 4번째 인덱스로 이동
+            currentIndex = 3;
+        } else {
+            currentIndex++; // 다음 슬라이드로 이동
+        }
+        console.log(currentIndex);
+    } else if (scrollY < slideHeight * currentIndex) {
+        if (currentIndex === 3) {
+            // 4번째 인덱스에서 이전으로 이동하면 2번째 인덱스로 이동
+            currentIndex = 2;
+        } else {
+            currentIndex--; // 이전 슬라이드로 이동
+        }
+    }
+
+    // 인덱스가 범위를 초과하지 않도록 제한
+    currentIndex = Math.max(0, Math.min(currentIndex, 4)); // 인덱스 범위를 4까지로 확장
+
+    showSlide(currentIndex); // 슬라이드 표시
+});
+
+// 초기 슬라이드 표시
+showSlide(currentIndex);
 
 // 브랜드 스토리!!!---
 
