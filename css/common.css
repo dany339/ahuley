@@ -640,6 +640,7 @@ body {
     width: 55.8rem;
     /* height: 7.1rem; */
     aspect-ratio: 1/0.1272;
+    min-height: 5.4rem;
     border: 3px solid var(--main-color);
     border-radius: 50px;
     display: flex;
@@ -679,10 +680,12 @@ body {
 
 .map-area select {
     width: 26.9rem;
-    height: 5.5rem;
+    max-height: 5.5rem;
+    min-height: 5rem;
+    aspect-ratio: 1/0.2045;
     background: var(--white100);
     /* margin-top: 4.1rem; */
-    margin-top: 2.1354vw;
+    margin-top: 1.5354vw;
     border: 2px solid var(--main-color);
     border-radius: 5px;
     font-size: 1.8rem;
@@ -785,6 +788,9 @@ body {
 
     .search {
         width: 100%;
+        aspect-ratio: 1/0.062;
+        min-height: 5.5rem;
+
         margin-top: 5.6rem;
     }
 
@@ -792,6 +798,7 @@ body {
         display: flex;
         justify-content: center;
         gap: 2rem;
+        margin-top: 1rem;
     }
 
     .map-area select {
@@ -902,7 +909,7 @@ body {
     .foot-con {
         flex-direction: column;
         align-items: flex-start;
-        padding: 7rem 3rem 7rem 3rem;
+        padding: 5rem 3rem 7rem 3rem;
     }
 
     .accredit {

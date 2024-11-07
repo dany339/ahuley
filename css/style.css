@@ -390,7 +390,7 @@
         width: 100%;
     }
     .menu-text-card h3 {
-        font-size: 9rem;
+        font-size: 8rem;
     }
 
     .menu-text-card p {
@@ -477,8 +477,8 @@
 
 @media (max-width: 1000px) {
     .event .view-more {
-        width: 4rem;
-        height: 4rem;
+        width: 3rem;
+        height: 3rem;
         border-radius: 50%;
         border: 2px solid var(--main-color);
         color: transparent;
