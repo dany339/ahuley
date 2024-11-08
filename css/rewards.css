@@ -85,15 +85,27 @@
     margin: 5.6rem auto 0 auto;
     padding: 0 2rem;
     border-bottom: 2px solid var(--main-color);
+    gap: 4.6rem;
 }
 
 .sns-fliter {
     font-size: 1.8rem;
     font-weight: 700;
+    display: flex;
 }
 
 .sns-fliter select {
     outline: none;
+    appearance: none;
+}
+
+.sns-fliter::after {
+    content: "";
+    display: block;
+    width: 2.4rem;
+    aspect-ratio: 1/1;
+    background: url(../img/arrow-m-bottom.png) no-repeat 50% / 50%;
+    margin-left: -3rem;
 }
 
 .sns-search button {
@@ -207,6 +219,10 @@
     color: var(--main-color);
 }
 
+.app-slider-wrap {
+    position: relative;
+}
+
 .app-con {
     position: relative;
     margin-top: 2rem;
@@ -279,6 +295,17 @@
 }
 .app-con:nth-child(6) dt::before {
     background-image: url(../img/app-ico6.svg);
+}
+
+.btn-next {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    width: 5rem;
+    aspect-ratio: 1/1;
+    background: url(../img/arrow2-w-right.png) no-repeat 50% / contain;
+    opacity: 0.5;
+    z-index: 1;
 }
 
 .vip .sec-title {

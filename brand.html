@@ -36,16 +36,19 @@
         />
         <meta name="twitter:image" content="https://www.myashley.co.kr/images/main/menu_queensplus_on.gif" />
 
-        <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+        <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/common.css" />
         <link rel="stylesheet" href="./css/brand.css" />
 
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
         <script src="./js/jquery-3.7.1.min.js"></script>
         <script src="./js/script.js" defer></script>
+        <script src="./js/brand.js" defer></script>
     </head>
     <body>
         <header id="header">
@@ -138,12 +141,12 @@
             <!-- //e: visual -->
 
             <!-- s: vision -->
-            <section class="vision" id="vision">
+            <section class="vision" id="vision" data-aos="fade-down">
                 <div class="inner">
                     <div class="sec-title"><strong>브랜드 비전</strong></div>
-                    <div class="vison-title">
+                    <div class="vison-title" data-aos="fade-down" data-aos-delay="200">
                         <h4>“편안하게 즐기는 식사”</h4>
-                        <p>
+                        <p data-aos="fade-up" data-aos-delay="400">
                             패밀리 레스토랑의 원조로서, 편안하고 따뜻한 식사 공간을 제공하면서 고객들이 소중한 사람들과
                             함께 즐길 수 있는 특별한 경험을 선사합니다.
                         </p>
@@ -156,7 +159,7 @@
             <section class="ideology" id="ideology">
                 <!-- .inner>(.sec-title>strong+h3)+.ideogy-slider-warp>.ideogy-slider.swiper>.swiper-wrapper>.swiper-slide.ideology-con>(figure>img)+(.ideology-txt>dl>dt+dd) -->
                 <div class="inner">
-                    <div class="sec-title">
+                    <div class="sec-title" data-aos="fade-down" data-aos-delay="100">
                         <strong>브랜드 이념</strong>
                         <h3>애슐리의 철학과 신념</h3>
                     </div>

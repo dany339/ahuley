@@ -36,16 +36,19 @@
         />
         <meta name="twitter:image" content="https://www.myashley.co.kr/images/main/menu_queensplus_on.gif" />
 
-        <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+        <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/common.css" />
         <link rel="stylesheet" href="./css/inquiry.css" />
 
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
         <script src="./js/jquery-3.7.1.min.js"></script>
         <script src="./js/script.js" defer></script>
+        <script src="./js/inquiry.js" defer></script>
     </head>
     <body>
         <header id="header">
@@ -138,13 +141,13 @@
             <!-- s: faq -->
             <section class="faq" id="faq">
                 <div class="inner">
-                    <div class="sec-title">
+                    <div class="sec-title" data-aos="fade-down" data-aos-delay="100">
                         <strong>FAQ</strong>
                         <h3>자주 묻는 질문</h3>
                     </div>
-                    <a href="#" class="view-more">VIEW MORE</a>
+                    <a href="#" class="view-more" data-aos="fade-down" data-aos-delay="200">VIEW MORE</a>
 
-                    <div class="faq-wrap">
+                    <div class="faq-wrap" data-aos="fade-up" data-aos-delay="400">
                         <div class="faq-tab-con">
                             <ul class="faq-tab">
                                 <li>전체</li>
@@ -157,7 +160,7 @@
                             </ul>
                         </div>
                         <!-- .info-wrap>ul>li*5>(i.hidden{question}+.faq-title>strong+h4)+.answer-wrap>i.hidden{answer}+p -->
-                        <div class="info-wrap">
+                        <div class="info-wrap" data-aos="fade-up" data-aos-delay="500">
                             <ul>
                                 <li>
                                     <div class="faq-title">
@@ -735,7 +738,7 @@
             <!-- s: question -->
             <section class="question" id="question">
                 <div class="inner">
-                    <div class="sec-title">
+                    <div class="sec-title" data-aos="fade-down">
                         <strong>문의하기</strong>
                         <h3>궁금한 점을 문의해주세요!</h3>
                     </div>
@@ -744,29 +747,29 @@
                             <fieldset>
                                 <legend><i class="hidden">문의하기 입력 폼</i></legend>
 
-                                <div class="f-row">
+                                <div class="f-row" data-aos="fade-up" data-aos-delay="200">
                                     <label for="store-name">매장명</label>
                                     <input type="text" id="store-name" placeholder="매장명을 입력해주세요." />
                                 </div>
 
-                                <div class="f-row">
+                                <div class="f-row" data-aos="fade-up" data-aos-delay="300">
                                     <label for="subject">제목<span></span></label>
                                     <input type="text" id="subject" placeholder="제목을 입력해주세요." required />
                                 </div>
 
-                                <div class="f-row">
+                                <div class="f-row" data-aos="fade-up" data-aos-delay="400">
                                     <label for="content">내용<span></span></label>
                                     <input id="content" placeholder="문의하실 내용을 입력해주세요." required />
                                 </div>
 
-                                <div class="f-row">
+                                <div class="f-row" data-aos="fade-up" data-aos-delay="500">
                                     <label for="attachment">첨부파일</label>
                                     <input type="file" id="attachment" />
                                     <p>총 3MB 이내로 등록하실 수 있습니다.</p>
                                 </div>
                             </fieldset>
                         </div>
-                        <button class="btn-more" type="submit">
+                        <button class="btn-more" type="submit" data-aos="fade-down" data-aos-delay="600">
                             문의하기<span class="btn-more-con"
                                 ><span class="btn-more-item"></span><span class="btn-more-item"></span
                                 ><span class="btn-more-item"></span><span class="btn-more-item"></span
@@ -827,5 +830,8 @@
                 </div>
             </div>
         </footer>
+
+        <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+        <a href="#talk" class="btn-talk"><i class="hidden">TALK</i></a>
     </body>
 </html>
