@@ -344,22 +344,22 @@
     background: no-repeat 50%;
 }
 
-.app-txt.1 dl::before {
+.app-icon::before {
     background-image: url(../img/app-ico1.svg);
 }
-.app-txt.2 dl::before {
+.app-icon.2::before {
     background-image: url(../img/app-ico2.svg);
 }
-.app-txt.3 dl::before {
+.app-icon.3::before {
     background-image: url(../img/app-ico3.svg);
 }
-.app-txt.4 dl::before {
+.app-icon.4::before {
     background-image: url(../img/app-ico4.svg);
 }
-.app-txt.5 dl::before {
+.app-icon.5::before {
     background-image: url(../img/app-ico5.svg);
 }
-.app-txt.6 dl::before {
+.app-icon.6::before {
     background-image: url(../img/app-ico6.svg);
 }
 
