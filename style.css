@@ -332,7 +332,7 @@
   transition: box-shadow 0.3s ease;
 }
 
-.app-con li dl::before {
+.app-txt dl::before {
   content: "";
   display: block;
   position: absolute;
@@ -344,22 +344,22 @@
   background: no-repeat 50%;
 }
 
-.app-txt1 dl::before {
+.app-txt.1 dl::before {
   background-image: url(../img/app-ico1.svg);
 }
-.app-txt2 dl::before {
+.app-txt.2 dl::before {
   background-image: url(../img/app-ico2.svg);
 }
-.app-txt3 dl::before {
+.app-txt.3 dl::before {
   background-image: url(../img/app-ico3.svg);
 }
-.app-txt4 dl::before {
+.app-txt.4 dl::before {
   background-image: url(../img/app-ico4.svg);
 }
-.app-txt5 dl::before {
+.app-txt.5 dl::before {
   background-image: url(../img/app-ico5.svg);
 }
-.app-txt6 dl::before {
+.app-txt.6 dl::before {
   background-image: url(../img/app-ico6.svg);
 }
 
