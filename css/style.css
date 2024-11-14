@@ -333,12 +333,7 @@
 }
 
 .app-icon figure {
-  content: "";
   display: block;
-  position: absolute;
-  top: 5rem;
-  left: 50%;
-  transform: translateX(-50%);
   width: 6.5rem;
   aspect-ratio: 1/1;
   background: no-repeat 50%;
