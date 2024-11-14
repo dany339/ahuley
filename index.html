@@ -1,881 +1,784 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ashley</title>
-    <link rel="icon" href="./img/favicon.png" type="image/png" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ashley</title>
+        <link rel="icon" href="./img/favicon.png" type="image/png" />
 
-    <!-- 기본 SEO 메타 태그 -->
-    <meta
-      name="description"
-      content="다양한 글로벌 요리와 신선한 재료로 만든 뷔페 메뉴! 애슐리에서 특별한 다이닝 경험을 즐겨보세요. 가족 모임, 기념일에 어울리는 고급스러운 분위기와 계절별 신메뉴를 제공합니다."
-    />
-    <meta
-      name="keywords"
-      content="애슐리, 뷔페, 글로벌 요리, 샐러드 바, 프리미엄 레스토랑, 가족 외식, 기념일, 신메뉴, 다이닝 경험, 계절 요리"
-    />
-    <link rel="canonical" href="https://dany339.github.io/ahuley/" />
+        <!-- 기본 SEO 메타 태그 -->
+        <meta
+            name="description"
+            content="다양한 글로벌 요리와 신선한 재료로 만든 뷔페 메뉴! 애슐리에서 특별한 다이닝 경험을 즐겨보세요. 가족 모임, 기념일에 어울리는 고급스러운 분위기와 계절별 신메뉴를 제공합니다."
+        />
+        <meta
+            name="keywords"
+            content="애슐리, 뷔페, 글로벌 요리, 샐러드 바, 프리미엄 레스토랑, 가족 외식, 기념일, 신메뉴, 다이닝 경험, 계절 요리"
+        />
+        <link rel="canonical" href="https://dany339.github.io/ahuley/" />
 
-    <!-- Open Graph 메타 태그 (SNS 최적화) -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Ashley - 특별한 순간을 만드는 프리미엄 뷔페 레스토랑"
-    />
-    <meta
-      property="og:description"
-      content="다양한 글로벌 요리와 신선한 재료로 만든 뷔페 메뉴! 애슐리에서 특별한 다이닝 경험을 즐겨보세요."
-    />
-    <meta property="og:url" content="https://dany339.github.io/ahuley/" />
-    <meta
-      property="og:image"
-      content="https://www.myashley.co.kr/images/main/menu_queensplus_on.gif"
-    />
+        <!-- Open Graph 메타 태그 (SNS 최적화) -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Ashley - 특별한 순간을 만드는 프리미엄 뷔페 레스토랑" />
+        <meta
+            property="og:description"
+            content="다양한 글로벌 요리와 신선한 재료로 만든 뷔페 메뉴! 애슐리에서 특별한 다이닝 경험을 즐겨보세요."
+        />
+        <meta property="og:url" content="https://dany339.github.io/ahuley/" />
+        <meta property="og:image" content="https://www.myashley.co.kr/images/main/menu_queensplus_on.gif" />
 
-    <!-- Twitter Card 메타 태그 -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Ashley - 특별한 순간을 만드는 프리미엄 뷔페 레스토랑"
-    />
-    <meta
-      name="twitter:description"
-      content="다양한 글로벌 요리와 신선한 재료로 만든 뷔페 메뉴! 애슐리에서 특별한 다이닝 경험을 즐겨보세요."
-    />
-    <meta
-      name="twitter:image"
-      content="https://www.myashley.co.kr/images/main/menu_queensplus_on.gif"
-    />
+        <!-- Twitter Card 메타 태그 -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Ashley - 특별한 순간을 만드는 프리미엄 뷔페 레스토랑" />
+        <meta
+            name="twitter:description"
+            content="다양한 글로벌 요리와 신선한 재료로 만든 뷔페 메뉴! 애슐리에서 특별한 다이닝 경험을 즐겨보세요."
+        />
+        <meta name="twitter:image" content="https://www.myashley.co.kr/images/main/menu_queensplus_on.gif" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/style.css" />
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="./js/jquery-3.7.1.min.js"></script>
-    <script src="./js/script.js" defer></script>
-  </head>
-  <body>
-    <div class="cursor"></div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="./js/script.js" defer></script>
+    </head>
+    <body>
+        <div class="cursor"></div>
 
-    <header id="header">
-      <h1 class="logo">
-        <a href="index.html"><i class="hidden">Ashley</i></a>
-      </h1>
-      <div class="util-menu">
-        <button class="btn-menu">
-          <i class="hidden">메뉴</i
-          ><span class="menu-bar"
-            ><span class="bar1"></span><span class="bar2"></span
-            ><span class="bar3"></span
-          ></span>
-        </button>
-      </div>
-      <div class="sns-list">
-        <button class="btn-instargram"><i class="hidden">인스타그램</i></button>
-        <button class="btn-facebook"><i class="hidden">페이스북</i></button>
-      </div>
-
-      <div class="gnb">
-        <figure>
-          <img
-            src="./img/gnb-img.jpg"
-            alt="하와이안 버터갈릭 슈림프,스윗 갈릭 크런치 크랩"
-          />
-        </figure>
-        <div class="gnb-menu">
-          <nav>
-            <ul class="main-menu">
-              <li>
-                <h3><a href="brand.html">브랜드 소개</a></h3>
-                <ul class="sub-menu">
-                  <li><a href="brand.html#vision">브랜드 비전</a></li>
-                  <li><a href="brand.html#ideology">브랜드 이념</a></li>
-                  <li><a href="brand.html#story">브랜드 스토리</a></li>
-                </ul>
-              </li>
-              <li>
-                <h3><a href="menu.html">메뉴</a></h3>
-                <ul class="sub-menu">
-                  <li><a href="menu.html#menu">전체메뉴</a></li>
-                  <li><a href="menu.html#tip">애슐리 팁</a></li>
-                  <li><a href="menu.html#allergie">식품정보</a></li>
-                  <li><a href="menu.html#price">가격 안내</a></li>
-                </ul>
-              </li>
-              <li>
-                <h3><a href="rewards.html">혜택</a></h3>
-                <ul class="sub-menu">
-                  <li><a href="rewards.html#sns">SNS이벤트</a></li>
-                  <li><a href="rewards.html#app">앱 사용 혜택</a></li>
-                </ul>
-              </li>
-              <li>
-                <h3><a href="store.html">매장 찾기</a></h3>
-                <ul class="sub-menu">
-                  <li><a href="store.html#map">매장 리스트</a></li>
-                  <li><a href="store.html#map">지도보기</a></li>
-                </ul>
-              </li>
-              <li>
-                <h3><a href="inquiry.html">고객센터</a></h3>
-                <ul class="sub-menu">
-                  <li><a href="inquiry.html#faq">FAQ</a></li>
-                  <li><a href="inquiry.html#question">문의하기</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <button type="button" class="btn-close">
-          <i class="hidden">close</i
-          ><span class="close-bar"
-            ><span class="bar1"></span><span class="bar2"></span
-          ></span>
-        </button>
-        <a class="btn-main" href="index.html"><i class="hidden">Ashley</i></a>
-      </div>
-    </header>
-
-    <aside class="breadcrumb">
-      <button class="prev"><i class="hidden">이전</i></button>
-      <p>인기메뉴</p>
-      <button class="next"><i class="hidden">다음</i></button>
-    </aside>
-
-    <main id="main">
-      <!-- s: visual -->
-      <section class="visual">
-        <div class="main-title">
-          <h2><i class="hidden">ASHLEY</i></h2>
-        </div>
-        <figure class="main-pic">
-          <img src="./img/main-visual.jpg" alt="" />
-        </figure>
-      </section>
-      <!-- //e: visual -->
-
-      <!-- s: menu -->
-      <section class="menu">
-        <!-- (.menu-txt>strong+(ul.menu-txt-list>li*6>h3+p)+a.btn-more)+(.menu-con>ul>li*6>(figure>img)+p) -->
-        <div class="inner">
-          <div class="slider-menu-wrap" data-aos="fade-right">
-            <div class="swiper menu-txt-slider">
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide menu-text-card">
-                  <strong>애슐리의 인기메뉴</strong>
-                  <h3>Sea Food</h3>
-                  <p>
-                    신선한 해산물의 깊은 풍미를 담은 특별한 요리들을 지금
-                    만나보세요. 탱탱한 새우, 부드러운 오징어, 신선한 해산물들이
-                    어우러져 바다의 맛을 그대로 느낄 수 있는 다채로운 메뉴를
-                    준비했습니다.
-                  </p>
-                  <a href="menu.html" class="btn-more"
-                    >더 많은 메뉴보기<span class="btn-more-con"
-                      ><span class="btn-more-item"></span
-                      ><span class="btn-more-item"></span
-                      ><span class="btn-more-item"></span
-                      ><span class="btn-more-item"></span></span
-                  ></a>
-                </div>
-                <div class="swiper-slide menu-text-card">
-                  <strong>애슐리의 인기메뉴</strong>
-                  <h3>Chicken</h3>
-                  <p>
-                    바삭하게 튀겨낸 황금빛 치킨! 입안 가득 퍼지는 고소함과
-                    촉촉한 육즙이 완벽한 조화를 이루며, 중독성 있는 바삭한
-                    식감을 선사합니다.
-                  </p>
-                  <a href="menu.html" class="btn-more"
-                    >더 많은 메뉴보기<span class="btn-more-con"
-                      ><span class="btn-more-item"></span
-                      ><span class="btn-more-item"></span
-                      ><span class="btn-more-item"></span
-                      ><span class="btn-more-item"></span></span
-                  ></a>
-                </div>
-                <div class="swiper-slide menu-text-card">
-                  <strong>애슐리의 인기메뉴</strong>
-                  <h3>Shrimp</h3>
-                  <p>
-                    새우의 풍미를 극대화한 특별한 요리, 튀김옷을 입힌 새우가
-                    매콤달콤한 소스와 함께 제공되어 매 순간 입맛을 사로잡습니다.
-                  </p>
-                  <a href="menu.html" class="btn-more"
-                    >더 많은 메뉴보기<span class="btn-more-con"
-                      ><span class="btn-more-item"></span
-                      ><span class="btn-more-item"></span
-                      ><span class="btn-more-item"></span
-                      ><span class="btn-more-item"></span></span
-                  ></a>
-                </div>
-                <div class="swiper-slide menu-text-card">
-                  <strong>애슐리의 인기메뉴</strong>
-                  <h3>Brownie</h3>
-                  <p>
-                    진한 초콜릿의 달콤함을 가득 담은 초코 케이크! 부드럽고
-                    촉촉한 질감이 입안에서 녹아들어, 완벽한 디저트로 마무리할 수
-                    있습니다.
-                  </p>
-                  <a href="menu.html" class="btn-more"
-                    >더 많은 메뉴보기<span class="btn-more-con"
-                      ><span class="btn-more-item"></span
-                      ><span class="btn-more-item"></span
-                      ><span class="btn-more-item"></span
-                      ><span class="btn-more-item"></span></span
-                  ></a>
-                </div>
-                <div class="swiper-slide menu-text-card">
-                  <strong>애슐리의 인기메뉴</strong>
-                  <h3>Gorgonzola</h3>
-                  <p>
-                    녹아내리는 고소한 치즈와 담백한 토마토 소스가 만나 완성된
-                    클래식 피자. 한 입 베어 물면 느껴지는 풍부한 치즈의 풍미가
-                    입안을 가득 채웁니다.
-                  </p>
-                  <a href="menu.html" class="btn-more"
-                    >더 많은 메뉴보기<span class="btn-more-con"
-                      ><span class="btn-more-item"></span
-                      ><span class="btn-more-item"></span
-                      ><span class="btn-more-item"></span
-                      ><span class="btn-more-item"></span></span
-                  ></a>
-                </div>
-                <div class="swiper-slide menu-text-card">
-                  <strong>애슐리의 인기메뉴</strong>
-                  <h3>Spicy Pizza</h3>
-                  <p>
-                    매콤한 양념과 바삭한 도우가 완벽한 조화를 이루는 스파이시
-                    피자. 입안 가득 퍼지는 매운맛이 매력적이며, 한 조각만으로도
-                    강렬한 만족감을 선사합니다.
-                  </p>
-                  <a href="menu.html" class="btn-more"
-                    >더 많은 메뉴보기<span class="btn-more-con"
-                      ><span class="btn-more-item"></span
-                      ><span class="btn-more-item"></span
-                      ><span class="btn-more-item"></span
-                      ><span class="btn-more-item"></span></span
-                  ></a>
-                </div>
-              </div>
+        <header id="header">
+            <h1 class="logo">
+                <a href="index.html"><i class="hidden">Ashley</i></a>
+            </h1>
+            <div class="util-menu">
+                <button class="btn-menu">
+                    <i class="hidden">메뉴</i
+                    ><span class="menu-bar"
+                        ><span class="bar1"></span><span class="bar2"></span><span class="bar3"></span
+                    ></span>
+                </button>
+            </div>
+            <div class="sns-list">
+                <button class="btn-instargram"><i class="hidden">인스타그램</i></button>
+                <button class="btn-facebook"><i class="hidden">페이스북</i></button>
             </div>
 
-            <div
-              class="menu-con-slider-wrap"
-              data-aos="fade-left"
-              data-aod-delay="800"
-            >
-              <div class="swiper menu-con-slider">
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide menu-card">
-                    <figure><img src="./img/main-menu1.jpg" alt="" /></figure>
-                    <div class="menu-name">
-                      <p>
-                        스페니쉬 뽈뽀<br />
-                        새우 튀김 데마끼
-                      </p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide menu-card">
-                    <figure><img src="./img/main-menu2.jpg" alt="" /></figure>
-                    <div class="menu-name">
-                      <p>통살치킨</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide menu-card">
-                    <figure><img src="./img/main-menu3.jpg" alt="" /></figure>
-                    <div class="menu-name">
-                      <p>스위트 칠리새우</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide menu-card">
-                    <figure><img src="./img/main-menu4.jpg" alt="" /></figure>
-                    <div class="menu-name">
-                      <p>진한 초코 브라우니</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide menu-card">
-                    <figure><img src="./img/main-menu5.jpg" alt="" /></figure>
-                    <div class="menu-name">
-                      <p>고르곤졸라 갈릭 수제 피자</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide menu-card">
-                    <figure><img src="./img/main-menu6.jpg" alt="" /></figure>
-                    <div class="menu-name">
-                      <p>
-                        스파이시 슈림프<br />
-                        디아볼라 피자
-                      </p>
-                    </div>
-                  </div>
+            <div class="gnb">
+                <figure>
+                    <img src="./img/gnb-img.jpg" alt="하와이안 버터갈릭 슈림프,스윗 갈릭 크런치 크랩" />
+                </figure>
+                <div class="gnb-menu">
+                    <nav>
+                        <ul class="main-menu">
+                            <li>
+                                <h3><a href="brand.html">브랜드 소개</a></h3>
+                                <ul class="sub-menu">
+                                    <li><a href="brand.html#vision">브랜드 비전</a></li>
+                                    <li><a href="brand.html#ideology">브랜드 이념</a></li>
+                                    <li><a href="brand.html#story">브랜드 스토리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3><a href="menu.html">메뉴</a></h3>
+                                <ul class="sub-menu">
+                                    <li><a href="menu.html#menu">전체메뉴</a></li>
+                                    <li><a href="menu.html#tip">애슐리 팁</a></li>
+                                    <li><a href="menu.html#allergie">식품정보</a></li>
+                                    <li><a href="menu.html#price">가격 안내</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3><a href="rewards.html">혜택</a></h3>
+                                <ul class="sub-menu">
+                                    <li><a href="rewards.html#sns">SNS이벤트</a></li>
+                                    <li><a href="rewards.html#app">앱 사용 혜택</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3><a href="store.html">매장 찾기</a></h3>
+                                <ul class="sub-menu">
+                                    <li><a href="store.html#map">매장 리스트</a></li>
+                                    <li><a href="store.html#map">지도보기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3><a href="inquiry.html">고객센터</a></h3>
+                                <ul class="sub-menu">
+                                    <li><a href="inquiry.html#faq">FAQ</a></li>
+                                    <li><a href="inquiry.html#question">문의하기</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-              </div>
+                <button type="button" class="btn-close">
+                    <i class="hidden">close</i
+                    ><span class="close-bar"><span class="bar1"></span><span class="bar2"></span></span>
+                </button>
+                <a class="btn-main" href="index.html"><i class="hidden">Ashley</i></a>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- //e: menu -->
+        </header>
 
-      <!-- s: event -->
-      <section class="event">
-        <div class="inner">
-          <div class="sec-title" data-aos="fade-down" data-aos-delay="100">
-            <strong>이달의 이벤트</strong>
-            <h3>최신 소식과 함께 즐거운 이벤트에 참여하세요!</h3>
-          </div>
+        <aside class="breadcrumb">
+            <button class="prev"><i class="hidden">이전</i></button>
+            <p>인기메뉴</p>
+            <button class="next"><i class="hidden">다음</i></button>
+        </aside>
 
-          <!-- .event-tab>(ul.tab-list>li*2>a)+a.more -->
-          <div class="tab-con">
-            <ul class="tab-item event-tab">
-              <li data-aos="fade-up" data-aos-delay="150">
-                <a class="on" href="#">인스타그램</a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="200">
-                <a href="#">페이스북</a>
-              </li>
-            </ul>
-            <a
-              href="rewards.html#sns"
-              class="view-more"
-              data-aos="fade-up"
-              data-aos-delay="200"
-              >VIEW MORE</a
-            >
-          </div>
-        </div>
+        <main id="main">
+            <!-- s: visual -->
+            <section class="visual">
+                <div class="main-title">
+                    <h2><i class="hidden">ASHLEY</i></h2>
+                </div>
+                <figure class="main-pic">
+                    <img src="./img/main-visual.jpg" alt="" />
+                </figure>
+            </section>
+            <!-- //e: visual -->
 
-        <!-- .event-list>ul.event-i>li*10>a>figure>img -->
-        <div class="event-lists" data-aos="fade-up" data-aos-delay="600">
-          <div class="event-list">
-            <div class="swiper event-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <a href="#">
-                    <figure>
-                      <img
-                        src="./img/event-pic1.jpg"
-                        alt="애슐리퀸즈를 팔로우하고 있는 애덕이들을 위한
+            <!-- s: menu -->
+            <section class="menu">
+                <!-- (.menu-txt>strong+(ul.menu-txt-list>li*6>h3+p)+a.btn-more)+(.menu-con>ul>li*6>(figure>img)+p) -->
+                <div class="inner">
+                    <div class="slider-menu-wrap" data-aos="fade-right">
+                        <div class="swiper menu-txt-slider">
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide menu-text-card">
+                                    <strong>애슐리의 인기메뉴</strong>
+                                    <h3>Sea Food</h3>
+                                    <p>
+                                        신선한 해산물의 깊은 풍미를 담은 특별한 요리들을 지금 만나보세요. 탱탱한 새우,
+                                        부드러운 오징어, 신선한 해산물들이 어우러져 바다의 맛을 그대로 느낄 수 있는
+                                        다채로운 메뉴를 준비했습니다.
+                                    </p>
+                                    <a href="menu.html" class="btn-more"
+                                        >더 많은 메뉴보기<span class="btn-more-con"
+                                            ><span class="btn-more-item"></span><span class="btn-more-item"></span
+                                            ><span class="btn-more-item"></span
+                                            ><span class="btn-more-item"></span></span
+                                    ></a>
+                                </div>
+                                <div class="swiper-slide menu-text-card">
+                                    <strong>애슐리의 인기메뉴</strong>
+                                    <h3>Chicken</h3>
+                                    <p>
+                                        바삭하게 튀겨낸 황금빛 치킨! 입안 가득 퍼지는 고소함과 촉촉한 육즙이 완벽한
+                                        조화를 이루며, 중독성 있는 바삭한 식감을 선사합니다.
+                                    </p>
+                                    <a href="menu.html" class="btn-more"
+                                        >더 많은 메뉴보기<span class="btn-more-con"
+                                            ><span class="btn-more-item"></span><span class="btn-more-item"></span
+                                            ><span class="btn-more-item"></span
+                                            ><span class="btn-more-item"></span></span
+                                    ></a>
+                                </div>
+                                <div class="swiper-slide menu-text-card">
+                                    <strong>애슐리의 인기메뉴</strong>
+                                    <h3>Shrimp</h3>
+                                    <p>
+                                        새우의 풍미를 극대화한 특별한 요리, 튀김옷을 입힌 새우가 매콤달콤한 소스와 함께
+                                        제공되어 매 순간 입맛을 사로잡습니다.
+                                    </p>
+                                    <a href="menu.html" class="btn-more"
+                                        >더 많은 메뉴보기<span class="btn-more-con"
+                                            ><span class="btn-more-item"></span><span class="btn-more-item"></span
+                                            ><span class="btn-more-item"></span
+                                            ><span class="btn-more-item"></span></span
+                                    ></a>
+                                </div>
+                                <div class="swiper-slide menu-text-card">
+                                    <strong>애슐리의 인기메뉴</strong>
+                                    <h3>Brownie</h3>
+                                    <p>
+                                        진한 초콜릿의 달콤함을 가득 담은 초코 케이크! 부드럽고 촉촉한 질감이 입안에서
+                                        녹아들어, 완벽한 디저트로 마무리할 수 있습니다.
+                                    </p>
+                                    <a href="menu.html" class="btn-more"
+                                        >더 많은 메뉴보기<span class="btn-more-con"
+                                            ><span class="btn-more-item"></span><span class="btn-more-item"></span
+                                            ><span class="btn-more-item"></span
+                                            ><span class="btn-more-item"></span></span
+                                    ></a>
+                                </div>
+                                <div class="swiper-slide menu-text-card">
+                                    <strong>애슐리의 인기메뉴</strong>
+                                    <h3>Gorgonzola</h3>
+                                    <p>
+                                        녹아내리는 고소한 치즈와 담백한 토마토 소스가 만나 완성된 클래식 피자. 한 입
+                                        베어 물면 느껴지는 풍부한 치즈의 풍미가 입안을 가득 채웁니다.
+                                    </p>
+                                    <a href="menu.html" class="btn-more"
+                                        >더 많은 메뉴보기<span class="btn-more-con"
+                                            ><span class="btn-more-item"></span><span class="btn-more-item"></span
+                                            ><span class="btn-more-item"></span
+                                            ><span class="btn-more-item"></span></span
+                                    ></a>
+                                </div>
+                                <div class="swiper-slide menu-text-card">
+                                    <strong>애슐리의 인기메뉴</strong>
+                                    <h3>Spicy Pizza</h3>
+                                    <p>
+                                        매콤한 양념과 바삭한 도우가 완벽한 조화를 이루는 스파이시 피자. 입안 가득 퍼지는
+                                        매운맛이 매력적이며, 한 조각만으로도 강렬한 만족감을 선사합니다.
+                                    </p>
+                                    <a href="menu.html" class="btn-more"
+                                        >더 많은 메뉴보기<span class="btn-more-con"
+                                            ><span class="btn-more-item"></span><span class="btn-more-item"></span
+                                            ><span class="btn-more-item"></span
+                                            ><span class="btn-more-item"></span></span
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-con-slider-wrap" data-aos="fade-left" data-aod-delay="800">
+                            <div class="swiper menu-con-slider">
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide menu-card">
+                                        <figure><img src="./img/main-menu1.jpg" alt="" /></figure>
+                                        <div class="menu-name">
+                                            <p>
+                                                스페니쉬 뽈뽀<br />
+                                                새우 튀김 데마끼
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide menu-card">
+                                        <figure><img src="./img/main-menu2.jpg" alt="" /></figure>
+                                        <div class="menu-name">
+                                            <p>통살치킨</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide menu-card">
+                                        <figure><img src="./img/main-menu3.jpg" alt="" /></figure>
+                                        <div class="menu-name">
+                                            <p>스위트 칠리새우</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide menu-card">
+                                        <figure><img src="./img/main-menu4.jpg" alt="" /></figure>
+                                        <div class="menu-name">
+                                            <p>진한 초코 브라우니</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide menu-card">
+                                        <figure><img src="./img/main-menu5.jpg" alt="" /></figure>
+                                        <div class="menu-name">
+                                            <p>고르곤졸라 갈릭 수제 피자</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide menu-card">
+                                        <figure><img src="./img/main-menu6.jpg" alt="" /></figure>
+                                        <div class="menu-name">
+                                            <p>
+                                                스파이시 슈림프<br />
+                                                디아볼라 피자
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //e: menu -->
+
+            <!-- s: event -->
+            <section class="event">
+                <div class="inner">
+                    <div class="sec-title" data-aos="fade-down" data-aos-delay="100">
+                        <strong>이달의 이벤트</strong>
+                        <h3>최신 소식과 함께 즐거운 이벤트에 참여하세요!</h3>
+                    </div>
+
+                    <!-- .event-tab>(ul.tab-list>li*2>a)+a.more -->
+                    <div class="tab-con">
+                        <ul class="tab-item event-tab">
+                            <li data-aos="fade-up" data-aos-delay="150">
+                                <a class="on" href="#">인스타그램</a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay="200">
+                                <a href="#">페이스북</a>
+                            </li>
+                        </ul>
+                        <a href="rewards.html#sns" class="view-more" data-aos="fade-up" data-aos-delay="200"
+                            >VIEW MORE</a
+                        >
+                    </div>
+                </div>
+
+                <!-- .event-list>ul.event-i>li*10>a>figure>img -->
+                <div class="event-lists" data-aos="fade-up" data-aos-delay="600">
+                    <div class="event-list">
+                        <div class="swiper event-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img
+                                                src="./img/event-pic1.jpg"
+                                                alt="애슐리퀸즈를 팔로우하고 있는 애덕이들을 위한
                                                     깜.짝.이.벤.트.가 곧 도착합니다 💝"
-                      />
-                    </figure>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <figure>
-                      <img
-                        src="./img/event-pic2.jpg"
-                        alt="𝓐𝓼𝓱𝓵𝓮𝔂 𝓠𝓾𝓮𝓮𝓷𝓼
+                                            />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img
+                                                src="./img/event-pic2.jpg"
+                                                alt="𝓐𝓼𝓱𝓵𝓮𝔂 𝓠𝓾𝓮𝓮𝓷𝓼
                                                     𝓣𝓱𝓮 𝓢𝓱𝓲𝓷𝔂 𝓖𝓪𝓻𝓭𝓮𝓷
                                                     2024. 10. 17 (𝓣𝓱𝓾) 𝓒𝓸𝓶𝓲𝓷𝓰 𝓢𝓸𝓸𝓷"
-                      />
-                    </figure>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <figure>
-                      <img
-                        src="./img/event-pic3.jpg"
-                        alt="𝓐𝓼𝓱𝓵𝓮𝔂 𝓠𝓾𝓮𝓮𝓷𝓼
+                                            />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img
+                                                src="./img/event-pic3.jpg"
+                                                alt="𝓐𝓼𝓱𝓵𝓮𝔂 𝓠𝓾𝓮𝓮𝓷𝓼
                                                     𝓣𝓱𝓮 𝓢𝓱𝓲𝓷𝔂 𝓖𝓪𝓻𝓭𝓮𝓷
                                                     2024. 10. 17 (𝓣𝓱𝓾) 𝓒𝓸𝓶𝓲𝓷𝓰 𝓢𝓸𝓸𝓷
                                                     "
-                      />
-                    </figure>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <figure>
-                      <img
-                        src="./img/event-pic4.jpg"
-                        alt="𝓐𝓼𝓱𝓵𝓮𝔂 𝓠𝓾𝓮𝓮𝓷𝓼
+                                            />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img
+                                                src="./img/event-pic4.jpg"
+                                                alt="𝓐𝓼𝓱𝓵𝓮𝔂 𝓠𝓾𝓮𝓮𝓷𝓼
                                                     𝓣𝓱𝓮 𝓢𝓱𝓲𝓷𝔂 𝓖𝓪𝓻𝓭𝓮𝓷
                                                     2024. 10. 17 (𝓣𝓱𝓾) 𝓒𝓸𝓶𝓲𝓷𝓰 𝓢𝓸𝓸𝓷"
-                      />
-                    </figure>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <figure>
-                      <img
-                        src="./img/event-pic5.jpg"
-                        alt="💬누구보다 빠르게 애슐리퀸즈 신메뉴를 만나보세요!"
-                      />
-                    </figure>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <figure>
-                      <img
-                        src="./img/event-pic6.jpg"
-                        alt="🎈해피 메리 추석 🎈
+                                            />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img
+                                                src="./img/event-pic5.jpg"
+                                                alt="💬누구보다 빠르게 애슐리퀸즈 신메뉴를 만나보세요!"
+                                            />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img
+                                                src="./img/event-pic6.jpg"
+                                                alt="🎈해피 메리 추석 🎈
                                                     추석에도 오몽새와 함께 놀자! 💛"
-                      />
-                    </figure>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <figure>
-                      <img
-                        src="./img/event-pic7.jpg"
-                        alt="달아 달아 밝은달아 🌝
+                                            />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img
+                                                src="./img/event-pic7.jpg"
+                                                alt="달아 달아 밝은달아 🌝
                                                     애덕이들의 소원을 들어줘!"
-                      />
-                    </figure>
-                  </a>
+                                            />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img
+                                                src="./img/event-pic8.jpg"
+                                                alt="10월, 애슐리퀸즈 신규 오픈 소식-! ₍♡•͈ᴗ•͈♡₎"
+                                            />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img
+                                                src="./img/event-pic9.jpg"
+                                                alt="9월 5일(목)부터 시작되는 애슐리퀸즈 월드 시푸드🦐🦀🐙"
+                                            />
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-list">
+                        <div class="swiper event-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img
+                                                src="./img/event-facebook-pic1.jpg"
+                                                alt="해피 버스데이! 애슐리 데이!"
+                                            />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img
+                                                src="./img/event-facebook-pic2.jpg"
+                                                alt="달콤한 이끌림 스트로베리 아틀리에"
+                                            />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="./img/event-facebook-pic3.jpg" alt="레이크꼬모 동탄점" />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="./img/event-facebook-pic4.jpg" alt="애슐리 굿즈 증정!" />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img
+                                                src="./img/event-facebook-pic5.jpg"
+                                                alt="인증샷 올리면 애슐리 식사권!"
+                                            />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="./img/event-facebook-pic6.jpg" alt="생맥주 무제한 무료!" />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="./img/event-facebook-pic7.jpg" alt="레이크꼬모 동탄점" />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="./img/event-facebook-pic8.jpg" alt="애슐리 스테이크 파티" />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="./img/event-facebook-pic9.jpg" alt="레이크꼬모 동탄점" />
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <figure>
-                      <img
-                        src="./img/event-pic8.jpg"
-                        alt="10월, 애슐리퀸즈 신규 오픈 소식-! ₍♡•͈ᴗ•͈♡₎"
-                      />
-                    </figure>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <figure>
-                      <img
-                        src="./img/event-pic9.jpg"
-                        alt="9월 5일(목)부터 시작되는 애슐리퀸즈 월드 시푸드🦐🦀🐙"
-                      />
-                    </figure>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="event-list">
-            <div class="swiper event-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <a href="#">
-                    <figure>
-                      <img
-                        src="./img/event-facebook-pic1.jpg"
-                        alt="해피 버스데이! 애슐리 데이!"
-                      />
-                    </figure>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <figure>
-                      <img
-                        src="./img/event-facebook-pic2.jpg"
-                        alt="달콤한 이끌림 스트로베리 아틀리에"
-                      />
-                    </figure>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <figure>
-                      <img
-                        src="./img/event-facebook-pic3.jpg"
-                        alt="레이크꼬모 동탄점"
-                      />
-                    </figure>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <figure>
-                      <img
-                        src="./img/event-facebook-pic4.jpg"
-                        alt="애슐리 굿즈 증정!"
-                      />
-                    </figure>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <figure>
-                      <img
-                        src="./img/event-facebook-pic5.jpg"
-                        alt="인증샷 올리면 애슐리 식사권!"
-                      />
-                    </figure>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <figure>
-                      <img
-                        src="./img/event-facebook-pic6.jpg"
-                        alt="생맥주 무제한 무료!"
-                      />
-                    </figure>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <figure>
-                      <img
-                        src="./img/event-facebook-pic7.jpg"
-                        alt="레이크꼬모 동탄점"
-                      />
-                    </figure>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <figure>
-                      <img
-                        src="./img/event-facebook-pic8.jpg"
-                        alt="애슐리 스테이크 파티"
-                      />
-                    </figure>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <figure>
-                      <img
-                        src="./img/event-facebook-pic9.jpg"
-                        alt="레이크꼬모 동탄점"
-                      />
-                    </figure>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- //e: event -->
+            </section>
+            <!-- //e: event -->
 
-      <!-- s: map -->
-      <section class="map">
-        <div class="inner">
-          <div class="sec-title" data-aos="fade-down" data-aos-delay="200">
-            <strong>매장 찾기</strong>
-            <h3>다양한 매장 정보를 확인해보세요!</h3>
-          </div>
-          <div class="map-wrap">
-            <div class="map-view" data-aos="fade-right" data-aos-delay="300">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.8458392856105!2d126.87670707635154!3d35.16046525840452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35718c0f40a3fc37%3A0xafead6869e477c15!2z7JWg7IqQ66as7YC47KaIIOq0keyjvOycoOyKpO2AmOyWtOygkA!5e0!3m2!1sko!2skr!4v1729476181182!5m2!1sko!2skr"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-            <div class="map-search">
-              <div class="search" data-aos="fade-up" data-aos-delay="300">
-                <input type="text" id="text" />
-                <label for="text">매장명을 검색해주세요.</label>
-                <button><i class="hidden">검색</i></button>
-              </div>
-              <div class="map-area">
-                <div data-aos="fade-up" data-aos-delay="400">
-                  <select>
-                    <option value="">시/도 선택</option>
-                    <option value="">서울</option>
-                    <option value="">인천</option>
-                    <option value="">경기</option>
-                    <option value="">강원</option>
-                    <option value="">대전</option>
-                    <option value="">세종</option>
-                    <option value="">대구</option>
-                    <option value="">광주</option>
-                    <option value="">부산</option>
-                    <option value="">울산</option>
-                    <option value="">충북</option>
-                    <option value="">충남</option>
-                    <option value="">전북</option>
-                    <option value="">전남</option>
-                    <option value="">경북</option>
-                    <option value="">경남</option>
-                    <option value="">제주</option>
-                  </select>
+            <!-- s: map -->
+            <section class="map">
+                <div class="inner">
+                    <div class="sec-title" data-aos="fade-down" data-aos-delay="200">
+                        <strong>매장 찾기</strong>
+                        <h3>다양한 매장 정보를 확인해보세요!</h3>
+                    </div>
+                    <div class="map-wrap">
+                        <div class="map-view" data-aos="fade-right" data-aos-delay="300">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.8458392856105!2d126.87670707635154!3d35.16046525840452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35718c0f40a3fc37%3A0xafead6869e477c15!2z7JWg7IqQ66as7YC47KaIIOq0keyjvOycoOyKpO2AmOyWtOygkA!5e0!3m2!1sko!2skr!4v1729476181182!5m2!1sko!2skr"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+                        <div class="map-search">
+                            <div class="search" data-aos="fade-up" data-aos-delay="300">
+                                <input type="text" id="text" />
+                                <label for="text">매장명을 검색해주세요.</label>
+                                <button><i class="hidden">검색</i></button>
+                            </div>
+                            <div class="map-area">
+                                <div data-aos="fade-up" data-aos-delay="400">
+                                    <select>
+                                        <option value="">시/도 선택</option>
+                                        <option value="">서울</option>
+                                        <option value="">인천</option>
+                                        <option value="">경기</option>
+                                        <option value="">강원</option>
+                                        <option value="">대전</option>
+                                        <option value="">세종</option>
+                                        <option value="">대구</option>
+                                        <option value="">광주</option>
+                                        <option value="">부산</option>
+                                        <option value="">울산</option>
+                                        <option value="">충북</option>
+                                        <option value="">충남</option>
+                                        <option value="">전북</option>
+                                        <option value="">전남</option>
+                                        <option value="">경북</option>
+                                        <option value="">경남</option>
+                                        <option value="">제주</option>
+                                    </select>
+                                </div>
+
+                                <div data-aos="fade-up" data-aos-delay="500">
+                                    <select>
+                                        <option value="">구/군 선택</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="map-filter" data-aos="fade-up" data-aos-delay="550">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="fil-queens" />
+                                        <label for="fil-queens">ASHLEY QUEENS</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="fil-wine" />
+                                        <label for="fil-wine">와인 무제한</label>
+                                    </li>
+                                    <li>
+                                        <input class="on" type="checkbox" id="fil-beer" />
+                                        <label for="fil-beer">생맥주 무제한</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="fil-child" />
+                                        <label for="fil-child">키즈룸</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- ul.map-info>li*3>(dl>dt+dd*2)+ul.map-ico>li*3 -->
+                            <ul class="map-info">
+                                <li data-aos="fade-up" data-aos-delay="600">
+                                    <dl>
+                                        <dt>퀸즈 광주유스퀘어점</dt>
+                                        <dd>0507-1449-1063</dd>
+                                        <dd>광주광역시 서구 무진대로 904 유스퀘어(광천터미널) 2층</dd>
+                                    </dl>
+                                    <ul class="map-ico">
+                                        <li><i class="hidden">와인 무제한</i></li>
+                                        <li class="on"><i class="hidden">생맥주 무제한</i></li>
+                                        <li><i class="hidden">키즈룸</i></li>
+                                    </ul>
+                                </li>
+                                <li data-aos="fade-up" data-aos-delay="650">
+                                    <dl>
+                                        <dt>퀸즈 뉴코아 강남점</dt>
+                                        <dd>0507-1408-1063</dd>
+                                        <dd>서울시 서초구 잠원로 51 뉴코아아울렛 강남정 1관 5층 애슐리퀸즈</dd>
+                                    </dl>
+                                    <ul class="map-ico">
+                                        <li><i class="hidden">와인 무제한</i></li>
+                                        <li class="on"><i class="hidden">생맥주 무제한</i></li>
+                                        <li><i class="hidden">키즈룸</i></li>
+                                    </ul>
+                                </li>
+                                <li data-aos="fade-up" data-aos-delay="700">
+                                    <dl>
+                                        <dt>퀸즈 뉴코아 부천점</dt>
+                                        <dd>0507-1411-8405</dd>
+                                        <dd>경기도 부천시 송내대로 239 (상동) 부천뉴코아아울렛 4층</dd>
+                                    </dl>
+                                    <ul class="map-ico">
+                                        <li><i class="hidden">와인 무제한</i></li>
+                                        <li class="on"><i class="hidden">생맥주 무제한</i></li>
+                                        <li class="on"><i class="hidden">키즈룸</i></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //e: map -->
+
+            <!-- s: app-download -->
+            <section class="app-download">
+                <div class="inner">
+                    <div>
+                        <div class="app-txt">
+                            <div class="sec-title" data-aos="fade-down">
+                                <strong>애슐리 APP</strong>
+                                <h3>애슐리 앱으로 더 편리하게, 더 알차게!</h3>
+                            </div>
+                            <p data-aos="fade-down" data-aos-delay="100">
+                                간편한 매장 예약, 실시간 할인 정보, 앱 전용 쿠폰 등 다양한 혜택을 한 손에 담아보세요.
+                                신메뉴와 이벤트 소식을 가장 먼저 받아보고, 적립 포인트와 멤버십 혜택까지 누릴 수
+                                있습니다.
+                            </p>
+                            <div class="app-store">
+                                <a
+                                    data-aos="fade-up"
+                                    data-aos-delay="300"
+                                    class="btn-more"
+                                    href="https://play.google.com/store/apps/details?id=kr.co.eland.eat&pcampaignid=web_share"
+                                    >PLAY STORE<span class="btn-more-con"
+                                        ><span class="btn-more-item"></span><span class="btn-more-item"></span
+                                        ><span class="btn-more-item"></span><span class="btn-more-item"></span></span
+                                ></a>
+                                <a
+                                    data-aos="fade-up"
+                                    data-aos-delay="350"
+                                    class="btn-more"
+                                    href="https://apps.apple.com/kr/app/%EC%95%A0%EC%8A%90%EB%A6%AC-ashley/id1098518587"
+                                    >APP STORE<span class="btn-more-con"
+                                        ><span class="btn-more-item"></span><span class="btn-more-item"></span
+                                        ><span class="btn-more-item"></span><span class="btn-more-item"></span></span
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //e: app-download -->
+
+            <!-- s: app-benefit -->
+            <section class="app-benefit" data-aos="fade-up">
+                <div class="inner">
+                    <div class="sec-title" data-aos="fade-down" data-aos-delay="200">
+                        <strong>애슐리 APP</strong>
+                        <h3>앱 하나로 즐기는 애슐리의 모든 혜택!</h3>
+                    </div>
+                    <a href="rewards.html#app" class="view-more" data-aos="fade-up" data-aos-delay="300">VIEW MORE</a>
+                    <!-- ul.app-con>li*6>(figure>img)+dl>dt+dd -->
+                    <div class="app-con">
+                        <div data-aos="fade-up" data-aos-delay="300">
+                            <div class="app-icon">
+                                <dl class="app-icon-1">
+                                    <dt>매장 예약</dt>
+                                    <dd>빠르고 손쉬운 매장 예약으로 대기 시간을 줄일 수 있습니다.</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="500">
+                            <div class="app-icon">
+                                <dl class="app-icon-2">
+                                    <dt>할인 정보</dt>
+                                    <dd>다양한 할인 및 프로모션 정보를 즉시 받아볼 수 있습니다.</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="600">
+                            <div class="app-icon">
+                                <dl class="app-icon-3">
+                                    <dt>포인트 적립</dt>
+                                    <dd>적립 포인트와 다양한 할인 쿠폰을 간편하게 관리할 수 있습니다.</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="650">
+                            <div class="app-icon">
+                                <dl class="app-icon-4">
+                                    <dt>전용 쿠폰</dt>
+                                    <dd>앱 사용자에게만 제공되는 특별한 앱 전용 쿠폰을 받을 수 있습니다.</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="750">
+                            <div class="app-icon">
+                                <dl class="app-icon-5">
+                                    <dt>신메뉴 알림</dt>
+                                    <dd>시즌별 신메뉴 정보와 혜택을 놓치지 않고 즐길 수 있습니다.</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="850">
+                            <div class="app-icon">
+                                <dl class="app-icon-6">
+                                    <dt>멤버십 혜택</dt>
+                                    <dd>전용 혜택을 받아 더욱 알뜰하게 애슐리를 이용할 수 있습니다.</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //e: app-benefit -->
+        </main>
+        <footer id="footer">
+            <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+            <div class="inner">
+                <div class="foot-list">
+                    <ul class="foot-info">
+                        <li>
+                            <a href="https://www.myashley.co.kr/Popup/per_info_pop_240528.html">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="https://www.myashley.co.kr/Popup/image_info_pop.aspx"
+                                >영상정보처리기기운영·관리방침</a
+                            >
+                        </li>
+                        <li>
+                            <a href="https://www.myashley.co.kr/Popup/Join_Agree_Pop20160418.aspx">이용약관</a>
+                        </li>
+                    </ul>
+
+                    <div class="family">
+                        <button type="button" class="btn-family">FAMILY SITE</button>
+                        <ul class="family-list">
+                            <li><a href="#">리미니</a></li>
+                            <li><a href="#">피자몰</a></li>
+                            <li><a href="#">더카페</a></li>
+                            <li><a href="#">아시아문</a></li>
+                            <li><a href="#">홈스트랑</a></li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div data-aos="fade-up" data-aos-delay="500">
-                  <select>
-                    <option value="">구/군 선택</option>
-                  </select>
+                <div class="foot-con">
+                    <address>
+                        <strong>(주) 이랜드이츠</strong>
+                        <p>
+                            서울시 금천구 가산디지털1로 186, 213호(가산동) 제이플라츠 | 대표이사 : 황성윤<br />
+                            매장 이용관련 문의 및 불편사항 : 1577-1259 | 이메일 : elandfood@eland.co.kr<br />
+                            호스팅 서비스 제공자 : 라드씨엔에스
+                        </p>
+                        <p>Copyright &copy; 2013 ASHLEY</p>
+                    </address>
+                    <div class="accredit">
+                        <figure><img src="./img/isms.svg" alt="isms 인증마크" /></figure>
+                        <p>
+                            인증범위: 이랜드이츠 온라인 서비스<br />
+                            (애슐리, 캠페인서비스, 이랜드이츠, 자연별곡, 더카페)<br />
+                            인증기간: 2022. 08. 17 ~ 2025. 08. 16
+                        </p>
+                    </div>
                 </div>
-              </div>
-              <div class="map-filter" data-aos="fade-up" data-aos-delay="550">
-                <ul>
-                  <li>
-                    <input type="checkbox" id="fil-queens" />
-                    <label for="fil-queens">ASHLEY QUEENS</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="fil-wine" />
-                    <label for="fil-wine">와인 무제한</label>
-                  </li>
-                  <li>
-                    <input class="on" type="checkbox" id="fil-beer" />
-                    <label for="fil-beer">생맥주 무제한</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="fil-child" />
-                    <label for="fil-child">키즈룸</label>
-                  </li>
-                </ul>
-              </div>
-              <!-- ul.map-info>li*3>(dl>dt+dd*2)+ul.map-ico>li*3 -->
-              <ul class="map-info">
-                <li data-aos="fade-up" data-aos-delay="600">
-                  <dl>
-                    <dt>퀸즈 광주유스퀘어점</dt>
-                    <dd>0507-1449-1063</dd>
-                    <dd>
-                      광주광역시 서구 무진대로 904 유스퀘어(광천터미널) 2층
-                    </dd>
-                  </dl>
-                  <ul class="map-ico">
-                    <li><i class="hidden">와인 무제한</i></li>
-                    <li class="on"><i class="hidden">생맥주 무제한</i></li>
-                    <li><i class="hidden">키즈룸</i></li>
-                  </ul>
-                </li>
-                <li data-aos="fade-up" data-aos-delay="650">
-                  <dl>
-                    <dt>퀸즈 뉴코아 강남점</dt>
-                    <dd>0507-1408-1063</dd>
-                    <dd>
-                      서울시 서초구 잠원로 51 뉴코아아울렛 강남정 1관 5층
-                      애슐리퀸즈
-                    </dd>
-                  </dl>
-                  <ul class="map-ico">
-                    <li><i class="hidden">와인 무제한</i></li>
-                    <li class="on"><i class="hidden">생맥주 무제한</i></li>
-                    <li><i class="hidden">키즈룸</i></li>
-                  </ul>
-                </li>
-                <li data-aos="fade-up" data-aos-delay="700">
-                  <dl>
-                    <dt>퀸즈 뉴코아 부천점</dt>
-                    <dd>0507-1411-8405</dd>
-                    <dd>
-                      경기도 부천시 송내대로 239 (상동) 부천뉴코아아울렛 4층
-                    </dd>
-                  </dl>
-                  <ul class="map-ico">
-                    <li><i class="hidden">와인 무제한</i></li>
-                    <li class="on"><i class="hidden">생맥주 무제한</i></li>
-                    <li class="on"><i class="hidden">키즈룸</i></li>
-                  </ul>
-                </li>
-              </ul>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- //e: map -->
+        </footer>
 
-      <!-- s: app-download -->
-      <section class="app-download">
-        <div class="inner">
-          <div>
-            <div class="app-txt">
-              <div class="sec-title" data-aos="fade-down">
-                <strong>애슐리 APP</strong>
-                <h3>애슐리 앱으로 더 편리하게, 더 알차게!</h3>
-              </div>
-              <p data-aos="fade-down" data-aos-delay="100">
-                간편한 매장 예약, 실시간 할인 정보, 앱 전용 쿠폰 등 다양한
-                혜택을 한 손에 담아보세요. 신메뉴와 이벤트 소식을 가장 먼저
-                받아보고, 적립 포인트와 멤버십 혜택까지 누릴 수 있습니다.
-              </p>
-              <div class="app-store">
-                <a
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                  class="btn-more"
-                  href="https://play.google.com/store/apps/details?id=kr.co.eland.eat&pcampaignid=web_share"
-                  >PLAY STORE<span class="btn-more-con"
-                    ><span class="btn-more-item"></span
-                    ><span class="btn-more-item"></span
-                    ><span class="btn-more-item"></span
-                    ><span class="btn-more-item"></span></span
-                ></a>
-                <a
-                  data-aos="fade-up"
-                  data-aos-delay="350"
-                  class="btn-more"
-                  href="https://apps.apple.com/kr/app/%EC%95%A0%EC%8A%90%EB%A6%AC-ashley/id1098518587"
-                  >APP STORE<span class="btn-more-con"
-                    ><span class="btn-more-item"></span
-                    ><span class="btn-more-item"></span
-                    ><span class="btn-more-item"></span
-                    ><span class="btn-more-item"></span></span
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- //e: app-download -->
-
-      <!-- s: app-benefit -->
-      <section class="app-benefit" data-aos="fade-up">
-        <div class="inner">
-          <div class="sec-title" data-aos="fade-down" data-aos-delay="200">
-            <strong>애슐리 APP</strong>
-            <h3>앱 하나로 즐기는 애슐리의 모든 혜택!</h3>
-          </div>
-          <a
-            href="rewards.html#app"
-            class="view-more"
-            data-aos="fade-up"
-            data-aos-delay="300"
-            >VIEW MORE</a
-          >
-          <!-- ul.app-con>li*6>(figure>img)+dl>dt+dd -->
-          <div class="app-con">
-            <div data-aos="fade-up" data-aos-delay="300">
-              <div class="app-icon">
-                <dl>
-                  <dt>매장 예약</dt>
-                  <dd>
-                    빠르고 손쉬운 매장 예약으로 대기 시간을 줄일 수 있습니다.
-                  </dd>
-                </dl>
-              </div>
-            </div>
-            <div data-aos="fade-up" data-aos-delay="500">
-              <div class="app-icon">
-                <dl>
-                  <dt>할인 정보</dt>
-                  <dd>
-                    다양한 할인 및 프로모션 정보를 즉시 받아볼 수 있습니다.
-                  </dd>
-                </dl>
-              </div>
-            </div>
-            <div data-aos="fade-up" data-aos-delay="600">
-              <div class="app-icon">
-                <dl>
-                  <dt>포인트 적립</dt>
-                  <dd>
-                    적립 포인트와 다양한 할인 쿠폰을 간편하게 관리할 수
-                    있습니다.
-                  </dd>
-                </dl>
-              </div>
-            </div>
-            <div data-aos="fade-up" data-aos-delay="650">
-              <div class="app-icon">
-                <dl>
-                  <dt>전용 쿠폰</dt>
-                  <dd>
-                    앱 사용자에게만 제공되는 특별한 앱 전용 쿠폰을 받을 수
-                    있습니다.
-                  </dd>
-                </dl>
-              </div>
-            </div>
-            <div data-aos="fade-up" data-aos-delay="750">
-              <div class="app-icon">
-                <dl>
-                  <dt>신메뉴 알림</dt>
-                  <dd>
-                    시즌별 신메뉴 정보와 혜택을 놓치지 않고 즐길 수 있습니다.
-                  </dd>
-                </dl>
-              </div>
-            </div>
-            <div data-aos="fade-up" data-aos-delay="850">
-              <div class="app-icon">
-                <dl>
-                  <dt>멤버십 혜택</dt>
-                  <dd>
-                    전용 혜택을 받아 더욱 알뜰하게 애슐리를 이용할 수 있습니다.
-                  </dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- //e: app-benefit -->
-    </main>
-    <footer id="footer">
-      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
-      <div class="inner">
-        <div class="foot-list">
-          <ul class="foot-info">
-            <li>
-              <a
-                href="https://www.myashley.co.kr/Popup/per_info_pop_240528.html"
-                >개인정보처리방침</a
-              >
-            </li>
-            <li>
-              <a href="https://www.myashley.co.kr/Popup/image_info_pop.aspx"
-                >영상정보처리기기운영·관리방침</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.myashley.co.kr/Popup/Join_Agree_Pop20160418.aspx"
-                >이용약관</a
-              >
-            </li>
-          </ul>
-
-          <div class="family">
-            <button type="button" class="btn-family">FAMILY SITE</button>
-            <ul class="family-list">
-              <li><a href="#">리미니</a></li>
-              <li><a href="#">피자몰</a></li>
-              <li><a href="#">더카페</a></li>
-              <li><a href="#">아시아문</a></li>
-              <li><a href="#">홈스트랑</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="foot-con">
-          <address>
-            <strong>(주) 이랜드이츠</strong>
-            <p>
-              서울시 금천구 가산디지털1로 186, 213호(가산동) 제이플라츠 |
-              대표이사 : 황성윤<br />
-              매장 이용관련 문의 및 불편사항 : 1577-1259 | 이메일 :
-              elandfood@eland.co.kr<br />
-              호스팅 서비스 제공자 : 라드씨엔에스
-            </p>
-            <p>Copyright &copy; 2013 ASHLEY</p>
-          </address>
-          <div class="accredit">
-            <figure><img src="./img/isms.svg" alt="isms 인증마크" /></figure>
-            <p>
-              인증범위: 이랜드이츠 온라인 서비스<br />
-              (애슐리, 캠페인서비스, 이랜드이츠, 자연별곡, 더카페)<br />
-              인증기간: 2022. 08. 17 ~ 2025. 08. 16
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
-  </body>
+        <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+    </body>
 </html>
