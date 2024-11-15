@@ -736,6 +736,7 @@ body {
     font-weight: 700;
     color: var(--main-color);
     text-align: center;
+    cursor: pointer;
 }
 
 .map-area div {
