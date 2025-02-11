@@ -1,580 +1,662 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ashley</title>
-        <link rel="icon" href="./img/favicon.png" type="image/png" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashley</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
 
-        <!-- 기본 SEO 메타 태그 -->
-        <meta
-            name="description"
-            content="다양한 글로벌 요리와 신선한 재료로 만든 뷔페 메뉴! 애슐리에서 특별한 다이닝 경험을 즐겨보세요. 가족 모임, 기념일에 어울리는 고급스러운 분위기와 계절별 신메뉴를 제공합니다."
-        />
-        <meta
-            name="keywords"
-            content="애슐리, 뷔페, 글로벌 요리, 샐러드 바, 프리미엄 레스토랑, 가족 외식, 기념일, 신메뉴, 다이닝 경험, 계절 요리"
-        />
-        <link rel="canonical" href="https://dany339.github.io/ahuley/" />
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="다양한 글로벌 요리와 신선한 재료로 만든 뷔페 메뉴! 애슐리에서 특별한 다이닝 경험을 즐겨보세요. 가족 모임, 기념일에 어울리는 고급스러운 분위기와 계절별 신메뉴를 제공합니다."
+    />
+    <meta
+      name="keywords"
+      content="애슐리, 뷔페, 글로벌 요리, 샐러드 바, 프리미엄 레스토랑, 가족 외식, 기념일, 신메뉴, 다이닝 경험, 계절 요리"
+    />
+    <link rel="canonical" href="https://dany339.github.io/ahuley/" />
 
-        <!-- Open Graph 메타 태그 (SNS 최적화) -->
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Ashley - 특별한 순간을 만드는 프리미엄 뷔페 레스토랑" />
-        <meta
-            property="og:description"
-            content="다양한 글로벌 요리와 신선한 재료로 만든 뷔페 메뉴! 애슐리에서 특별한 다이닝 경험을 즐겨보세요."
-        />
-        <meta property="og:url" content="https://dany339.github.io/ahuley/" />
-        <meta property="og:image" content="https://www.myashley.co.kr/images/main/menu_queensplus_on.gif" />
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Ashley - 특별한 순간을 만드는 프리미엄 뷔페 레스토랑"
+    />
+    <meta
+      property="og:description"
+      content="다양한 글로벌 요리와 신선한 재료로 만든 뷔페 메뉴! 애슐리에서 특별한 다이닝 경험을 즐겨보세요."
+    />
+    <meta property="og:url" content="https://dany339.github.io/ahuley/" />
+    <meta
+      property="og:image"
+      content="https://www.myashley.co.kr/images/main/menu_queensplus_on.gif"
+    />
 
-        <!-- Twitter Card 메타 태그 -->
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Ashley - 특별한 순간을 만드는 프리미엄 뷔페 레스토랑" />
-        <meta
-            name="twitter:description"
-            content="다양한 글로벌 요리와 신선한 재료로 만든 뷔페 메뉴! 애슐리에서 특별한 다이닝 경험을 즐겨보세요."
-        />
-        <meta name="twitter:image" content="https://www.myashley.co.kr/images/main/menu_queensplus_on.gif" />
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Ashley - 특별한 순간을 만드는 프리미엄 뷔페 레스토랑"
+    />
+    <meta
+      name="twitter:description"
+      content="다양한 글로벌 요리와 신선한 재료로 만든 뷔페 메뉴! 애슐리에서 특별한 다이닝 경험을 즐겨보세요."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.myashley.co.kr/images/main/menu_queensplus_on.gif"
+    />
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-        <link rel="stylesheet" href="./css/reset.css" />
-        <link rel="stylesheet" href="./css/common.css" />
-        <link rel="stylesheet" href="./css/rewards.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/rewards.css" />
 
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-        <script src="./js/jquery-3.7.1.min.js"></script>
-        <script src="./js/script.js" defer></script>
-    </head>
-    <body>
-        <header id="header">
-            <h1 class="logo">
-                <a href="index.html"><i class="hidden">Ashley</i></a>
-            </h1>
-            <div class="util-menu">
-                <button class="btn-menu">
-                    <i class="hidden">메뉴</i
-                    ><span class="menu-bar"
-                        ><span class="bar1"></span><span class="bar2"></span><span class="bar3"></span
-                    ></span>
-                </button>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <header id="header">
+      <h1 class="logo">
+        <a href="index.html"><i class="hidden">Ashley</i></a>
+      </h1>
+      <div class="util-menu">
+        <button class="btn-menu">
+          <i class="hidden">메뉴</i
+          ><span class="menu-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+            ><span class="bar3"></span
+          ></span>
+        </button>
+      </div>
+      <div class="sns-list">
+        <button class="btn-instargram"><i class="hidden">인스타그램</i></button>
+        <button class="btn-facebook"><i class="hidden">페이스북</i></button>
+      </div>
+
+      <div class="gnb">
+        <figure>
+          <img
+            src="./img/gnb-img.jpg"
+            alt="하와이안 버터갈릭 슈림프,스윗 갈릭 크런치 크랩"
+          />
+        </figure>
+        <div class="gnb-menu">
+          <nav>
+            <ul class="main-menu">
+              <li>
+                <h3><a href="brand.html">브랜드 소개</a></h3>
+                <ul class="sub-menu">
+                  <li><a href="brand.html#vision">브랜드 비전</a></li>
+                  <li><a href="brand.html#ideology">브랜드 이념</a></li>
+                  <li><a href="brand.html#story">브랜드 스토리</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3><a href="menu.html">메뉴</a></h3>
+                <ul class="sub-menu">
+                  <li><a href="menu.html#menu">전체메뉴</a></li>
+                  <li><a href="menu.html#tip">애슐리 팁</a></li>
+                  <li><a href="menu.html#allergie">식품정보</a></li>
+                  <li><a href="menu.html#price">가격 안내</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3><a href="rewards.html">혜택</a></h3>
+                <ul class="sub-menu">
+                  <li><a href="rewards.html#sns">SNS이벤트</a></li>
+                  <li><a href="rewards.html#app">앱 사용 혜택</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3><a href="store.html">매장 찾기</a></h3>
+                <ul class="sub-menu">
+                  <li><a href="store.html#map">매장 리스트</a></li>
+                  <li><a href="store.html#map">지도보기</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3><a href="inquiry.html">고객센터</a></h3>
+                <ul class="sub-menu">
+                  <li><a href="inquiry.html#faq">FAQ</a></li>
+                  <li><a href="inquiry.html#question">문의하기</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <button type="button" class="btn-close">
+          <i class="hidden">close</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <a class="btn-main" href="index.html"><i class="hidden">Ashley</i></a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <strong class="bread">Home > 혜택</strong>
+          <div class="visual-title">
+            <h2>Rewards</h2>
+            <p>
+              애슐리 앱과 SNS 이벤트를 통해 더 많은 혜택과 즐거움을 누려보세요!
+            </p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img src="./img/reward-visual.jpg" alt="" />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: sns -->
+      <section class="sns" id="sns">
+        <!-- .inner>(.sec-title>strong+h3)+.sns-wrap>(.sns-tab-con>ul.sns-tab>li*3)+.sns-seach+.sns-info>.sns-slider-wrap>.sns-slider.swiper>.swiper-wrapper>.swiper-slide.sns-item>figure+.sns-txt>p+p -->
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down">
+            <strong>SNS 이벤트</strong>
+            <h3>다양한 이벤트에 참여해보세요!</h3>
+          </div>
+          <div class="sns-wrap">
+            <div class="sns-tab-con">
+              <ul class="sns-tab" data-aos="fade-up" data-aos-delay="200">
+                <li><a href="#">진행중</a></li>
+                <li class="on"><a href="#">완료된</a></li>
+                <li><a href="#">당첨자</a></li>
+              </ul>
             </div>
-            <div class="sns-list">
-                <button class="btn-instargram"><i class="hidden">인스타그램</i></button>
-                <button class="btn-facebook"><i class="hidden">페이스북</i></button>
+            <div class="sns-search" data-aos="fade-up" data-aos-delay="300">
+              <div class="sns-fliter">
+                <select>
+                  <option value="">필터</option>
+                  <option value="">애슐리</option>
+                  <option value="">애슐리퀸즈</option>
+                </select>
+              </div>
+              <input
+                type="text"
+                id="sns-name"
+                placeholder="검색어를 입력해주세요."
+              />
+              <button><i class="hidden">검색</i></button>
             </div>
-
-            <div class="gnb">
-                <figure>
-                    <img src="./img/gnb-img.jpg" alt="하와이안 버터갈릭 슈림프,스윗 갈릭 크런치 크랩" />
-                </figure>
-                <div class="gnb-menu">
-                    <nav>
-                        <ul class="main-menu">
-                            <li>
-                                <h3><a href="brand.html">브랜드 소개</a></h3>
-                                <ul class="sub-menu">
-                                    <li><a href="brand.html#vision">브랜드 비전</a></li>
-                                    <li><a href="brand.html#ideology">브랜드 이념</a></li>
-                                    <li><a href="brand.html#story">브랜드 스토리</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <h3><a href="menu.html">메뉴</a></h3>
-                                <ul class="sub-menu">
-                                    <li><a href="menu.html#menu">전체메뉴</a></li>
-                                    <li><a href="menu.html#tip">애슐리 팁</a></li>
-                                    <li><a href="menu.html#allergie">식품정보</a></li>
-                                    <li><a href="menu.html#price">가격 안내</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <h3><a href="rewards.html">혜택</a></h3>
-                                <ul class="sub-menu">
-                                    <li><a href="rewards.html#sns">SNS이벤트</a></li>
-                                    <li><a href="rewards.html#app">앱 사용 혜택</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <h3><a href="store.html">매장 찾기</a></h3>
-                                <ul class="sub-menu">
-                                    <li><a href="store.html#map">매장 리스트</a></li>
-                                    <li><a href="store.html#map">지도보기</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <h3><a href="inquiry.html">고객센터</a></h3>
-                                <ul class="sub-menu">
-                                    <li><a href="inquiry.html#faq">FAQ</a></li>
-                                    <li><a href="inquiry.html#question">문의하기</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
+            <div class="sns-list-wrap">
+              <div class="sns-list">
+                <div class="sns-item">
+                  <figure><img src="./img/event-ing-pic.jpg" alt="" /></figure>
+                  <div class="sns-txt">
+                    <p>[애슐리] 2024년 10월 GRAND OPENING!</p>
+                    <p>2024-09-05 ~ 2024-09-05</p>
+                  </div>
                 </div>
-                <button type="button" class="btn-close">
-                    <i class="hidden">close</i
-                    ><span class="close-bar"><span class="bar1"></span><span class="bar2"></span></span>
-                </button>
-                <a class="btn-main" href="index.html"><i class="hidden">Ashley</i></a>
+              </div>
+              <div class="sns-list">
+                <div class="sns-item" data-aos="fade-up" data-aos-delay="400">
+                  <figure><img src="./img/sns-pic1.jpg" alt="" /></figure>
+                  <div class="sns-txt">
+                    <p>[애슐리] 2024년 10월 GRAND OPENING!</p>
+                    <p>2024-09-05 ~ 2024-09-05</p>
+                  </div>
+                </div>
+                <div class="sns-item" data-aos="fade-up" data-aos-delay="500">
+                  <figure><img src="./img/sns-pic2.jpg" alt="" /></figure>
+                  <div class="sns-txt">
+                    <p>
+                      [애슐리퀸즈] 8/27~8/28 슐리데이! 학생이라면 하루종일
+                      런치가격 ♥
+                    </p>
+                    <p>2024-08-27 ~ 2024-08-28</p>
+                  </div>
+                </div>
+                <div class="sns-item" data-aos="fade-up" data-aos-delay="600">
+                  <figure><img src="./img/sns-pic3.jpg" alt="" /></figure>
+                  <div class="sns-txt">
+                    <p>
+                      [애슐리퀸즈] 7/30~7/31 슐리데이! 학생이라면 하루종일
+                      런치가격 ♥
+                    </p>
+                    <p>2024-07-30 ~ 2024-07-31</p>
+                  </div>
+                </div>
+                <div class="sns-item" data-aos="fade-up" data-aos-delay="600">
+                  <figure><img src="./img/sns-pic4.jpg" alt="" /></figure>
+                  <div class="sns-txt">
+                    <p>[애슐리] 2024년 8월 GRAND OPENING!</p>
+                    <p>2024-07-05 ~ 2024-08-31</p>
+                  </div>
+                </div>
+                <div class="sns-item" data-aos="fade-up" data-aos-delay="700">
+                  <figure><img src="./img/sns-pic5.jpg" alt="" /></figure>
+                  <div class="sns-txt">
+                    <p>
+                      [애슐리퀸즈] 6/25~6/26 슐리데이! 학생이라면 하루종일
+                      런치가격 ♥
+                    </p>
+                    <p>2024-06-25 ~ 2024-06-26</p>
+                  </div>
+                </div>
+                <div class="sns-item" data-aos="fade-up" data-aos-delay="800">
+                  <figure><img src="./img/sns-pic6.jpg" alt="" /></figure>
+                  <div class="sns-txt">
+                    <p>
+                      [애슐리퀸즈] 5/28~5/29 슐리데이! 학생이라면 하루종일
+                      런치가격♥
+                    </p>
+                    <p>2024-05-28 ~ 2024-05-29</p>
+                  </div>
+                </div>
+                <div class="sns-item" data-aos="fade-up" data-aos-delay="900">
+                  <figure><img src="./img/sns-pic7.jpg" alt="" /></figure>
+                  <div class="sns-txt">
+                    <p>[애슐리] 5/2~5/10 제2회 애슐리 어린이 그림대회♬</p>
+                    <p>2024-05-01 ~ 2024-05-10</p>
+                  </div>
+                </div>
+                <div class="sns-item" data-aos="fade-up" data-aos-delay="900">
+                  <figure><img src="./img/sns-pic8.jpg" alt="" /></figure>
+                  <div class="sns-txt">
+                    <p>[애슐리퀸즈] 4/26 별내점 GRAND OPENING!</p>
+                    <p>2024-04-25 ~ 2024-05-31</p>
+                  </div>
+                </div>
+                <div class="sns-item" data-aos="fade-up" data-aos-delay="1000">
+                  <figure><img src="./img/sns-pic9.jpg" alt="" /></figure>
+                  <div class="sns-txt">
+                    <p>
+                      [애슐리퀸즈] 4/23~4/24 슐리데이! 학생이라면 하루종일
+                      런치가격♥
+                    </p>
+                    <p>2024-04-23 ~ 2024-04-24</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sns-list">당첨자에오</div>
+
+              <div class="pagination" data-aos="fade-up">
+                <a href="" class="prev"><i class="hidden">이전</i></a>
+                <a href="" class="on">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="" class="next"><i class="hidden">다음</i></a>
+              </div>
             </div>
-        </header>
+          </div>
+        </div>
+      </section>
+      <!-- //e: sns -->
 
-        <main id="main">
-            <!-- s: visual -->
-            <section class="visual">
-                <div class="inner">
-                    <strong class="bread">Home > 혜택</strong>
-                    <div class="visual-title">
-                        <h2>Rewards</h2>
-                        <p>애슐리 앱과 SNS 이벤트를 통해 더 많은 혜택과 즐거움을 누려보세요!</p>
-                    </div>
-                </div>
-                <figure class="visual-pic"><img src="./img/reward-visual.jpg" alt="" /></figure>
-            </section>
-            <!-- //e: visual -->
-
-            <!-- s: sns -->
-            <section class="sns" id="sns">
-                <!-- .inner>(.sec-title>strong+h3)+.sns-wrap>(.sns-tab-con>ul.sns-tab>li*3)+.sns-seach+.sns-info>.sns-slider-wrap>.sns-slider.swiper>.swiper-wrapper>.swiper-slide.sns-item>figure+.sns-txt>p+p -->
-                <div class="inner">
-                    <div class="sec-title" data-aos="fade-down">
-                        <strong>SNS 이벤트</strong>
-                        <h3>다양한 이벤트에 참여해보세요!</h3>
-                    </div>
-                    <div class="sns-wrap">
-                        <div class="sns-tab-con">
-                            <ul class="sns-tab" data-aos="fade-up" data-aos-delay="200">
-                                <li><a href="#">진행중</a></li>
-                                <li class="on"><a href="#">완료된</a></li>
-                                <li><a href="#">당첨자</a></li>
-                            </ul>
-                        </div>
-                        <div class="sns-search" data-aos="fade-up" data-aos-delay="300">
-                            <div class="sns-fliter">
-                                <select>
-                                    <option value="">필터</option>
-                                    <option value="">애슐리</option>
-                                    <option value="">애슐리퀸즈</option>
-                                </select>
-                            </div>
-                            <input type="text" id="sns-name" placeholder="검색어를 입력해주세요." />
-                            <button><i class="hidden">검색</i></button>
-                        </div>
-                        <div class="sns-list-wrap">
-                            <div class="sns-list">
-                                <div class="sns-item">
-                                    <figure><img src="./img/event-ing-pic.jpg" alt="" /></figure>
-                                    <div class="sns-txt">
-                                        <p>[애슐리] 2024년 10월 GRAND OPENING!</p>
-                                        <p>2024-09-05 ~ 2024-09-05</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sns-list">
-                                <div class="sns-item" data-aos="fade-up" data-aos-delay="400">
-                                    <figure><img src="./img/sns-pic1.jpg" alt="" /></figure>
-                                    <div class="sns-txt">
-                                        <p>[애슐리] 2024년 10월 GRAND OPENING!</p>
-                                        <p>2024-09-05 ~ 2024-09-05</p>
-                                    </div>
-                                </div>
-                                <div class="sns-item" data-aos="fade-up" data-aos-delay="500">
-                                    <figure><img src="./img/sns-pic2.jpg" alt="" /></figure>
-                                    <div class="sns-txt">
-                                        <p>[애슐리퀸즈] 8/27~8/28 슐리데이! 학생이라면 하루종일 런치가격 ♥</p>
-                                        <p>2024-08-27 ~ 2024-08-28</p>
-                                    </div>
-                                </div>
-                                <div class="sns-item" data-aos="fade-up" data-aos-delay="600">
-                                    <figure><img src="./img/sns-pic3.jpg" alt="" /></figure>
-                                    <div class="sns-txt">
-                                        <p>[애슐리퀸즈] 7/30~7/31 슐리데이! 학생이라면 하루종일 런치가격 ♥</p>
-                                        <p>2024-07-30 ~ 2024-07-31</p>
-                                    </div>
-                                </div>
-                                <div class="sns-item" data-aos="fade-up" data-aos-delay="600">
-                                    <figure><img src="./img/sns-pic4.jpg" alt="" /></figure>
-                                    <div class="sns-txt">
-                                        <p>[애슐리] 2024년 8월 GRAND OPENING!</p>
-                                        <p>2024-07-05 ~ 2024-08-31</p>
-                                    </div>
-                                </div>
-                                <div class="sns-item" data-aos="fade-up" data-aos-delay="700">
-                                    <figure><img src="./img/sns-pic5.jpg" alt="" /></figure>
-                                    <div class="sns-txt">
-                                        <p>[애슐리퀸즈] 6/25~6/26 슐리데이! 학생이라면 하루종일 런치가격 ♥</p>
-                                        <p>2024-06-25 ~ 2024-06-26</p>
-                                    </div>
-                                </div>
-                                <div class="sns-item" data-aos="fade-up" data-aos-delay="800">
-                                    <figure><img src="./img/sns-pic6.jpg" alt="" /></figure>
-                                    <div class="sns-txt">
-                                        <p>[애슐리퀸즈] 5/28~5/29 슐리데이! 학생이라면 하루종일 런치가격♥</p>
-                                        <p>2024-05-28 ~ 2024-05-29</p>
-                                    </div>
-                                </div>
-                                <div class="sns-item" data-aos="fade-up" data-aos-delay="900">
-                                    <figure><img src="./img/sns-pic7.jpg" alt="" /></figure>
-                                    <div class="sns-txt">
-                                        <p>[애슐리] 5/2~5/10 제2회 애슐리 어린이 그림대회♬</p>
-                                        <p>2024-05-01 ~ 2024-05-10</p>
-                                    </div>
-                                </div>
-                                <div class="sns-item" data-aos="fade-up" data-aos-delay="900">
-                                    <figure><img src="./img/sns-pic8.jpg" alt="" /></figure>
-                                    <div class="sns-txt">
-                                        <p>[애슐리퀸즈] 4/26 별내점 GRAND OPENING!</p>
-                                        <p>2024-04-25 ~ 2024-05-31</p>
-                                    </div>
-                                </div>
-                                <div class="sns-item" data-aos="fade-up" data-aos-delay="1000">
-                                    <figure><img src="./img/sns-pic9.jpg" alt="" /></figure>
-                                    <div class="sns-txt">
-                                        <p>[애슐리퀸즈] 4/23~4/24 슐리데이! 학생이라면 하루종일 런치가격♥</p>
-                                        <p>2024-04-23 ~ 2024-04-24</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sns-list">당첨자에오</div>
-
-                            <div class="pagination" data-aos="fade-up">
-                                <a href="" class="prev"><i class="hidden">이전</i></a>
-                                <a href="" class="on">1</a>
-                                <a href="">2</a>
-                                <a href="">3</a>
-                                <a href="" class="next"><i class="hidden">다음</i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- //e: sns -->
-
-            <!-- s: app -->
-            <section class="app" id="app">
-                <div class="inner">
-                    <div class="sec-title" data-aos="fade-down" data-aos-delay="100">
-                        <strong>앱 사용 혜택</strong>
-                        <h3>앱 하나로 즐기는 애슐리의 모든 혜택!</h3>
-                    </div>
-                    <ul class="app-tab" data-aos="fade-down" data-aos-delay="200">
-                        <li class="on">매장 이용</li>
-                        <li>할인 정보</li>
-                        <li>포인트 적립</li>
-                        <li>전용 쿠폰</li>
-                        <li>신메뉴 알림</li>
-                        <li>멤버십 혜택</li>
-                    </ul>
-                </div>
-                <div class="app-slider-wrap" data-aos="fade-up" data-aos-delay="400">
-                    <div class="app-slider swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide app-con">
-                                <figure><img src="./img/app-pic1.jpg" alt="" /></figure>
-                                <dl class="app-txt">
-                                    <dt>매장 이용</dt>
-                                    <dd>
-                                        애슐리 앱에서는 원하는 매장의 예약을 빠르게 할 수 있습니다. 예약한 시간에 맞춰
-                                        방문하면, 대기 시간 없이 바로 식사를 즐길 수 있어 바쁜 일상 속에서도 편리하게
-                                        애슐리를 경험할 수 있습니다.
-                                    </dd>
-                                </dl>
-                            </div>
-                            <div class="swiper-slide app-con">
-                                <figure><img src="./img/app-pic2.jpg" alt="" /></figure>
-                                <dl class="app-txt">
-                                    <dt>할인 정보</dt>
-                                    <dd>
-                                        앱을 통해 최신 할인 정보와 특별 프로모션을 실시간으로 받아볼 수 있습니다. 다양한
-                                        이벤트와 계절별 프로모션을 확인하여, 원하는 때에 추가 혜택을 누르세요.
-                                    </dd>
-                                </dl>
-                            </div>
-                            <div class="swiper-slide app-con">
-                                <figure><img src="./img/app-pic3.jpg" alt="" /></figure>
-                                <dl class="app-txt">
-                                    <dt>포인트 적립</dt>
-                                    <dd>
-                                        식사할 때마다 포인트가 적립되며, 적립된 포인트는 다양한 방식으로 사용할 수
-                                        있습니다. 포인트 잔액과 사용 가능한 할인 쿠폰을 통해 알뜰한 식사를 즐겨보세요.
-                                    </dd>
-                                </dl>
-                            </div>
-                            <div class="swiper-slide app-con">
-                                <figure><img src="./img/app-pic4.jpg" alt="" /></figure>
-                                <dl class="app-txt">
-                                    <dt>전용 쿠폰</dt>
-                                    <dd>
-                                        앱 사용자에게만 제공되는 한정 쿠폰이 정기적으로 올라옵니다. 매장에서 받을 수
-                                        없는 앱 전용 쿠폰으로 할인 혜택을 누리고, 시즌마다 새로운 쿠폰 혜택을
-                                        만나보세요.
-                                    </dd>
-                                </dl>
-                            </div>
-                            <div class="swiper-slide app-con">
-                                <figure><img src="./img/app-pic5.jpg" alt="" /></figure>
-                                <dl class="app-txt">
-                                    <dt>신메뉴 알림</dt>
-                                    <dd>
-                                        애슐리에서 새롭게 선보이는 메뉴와 계절별 한정 메뉴를 앱 알림으로 가장 먼저
-                                        확인할 수 있습니다. 계절별 다양한 메뉴를 통해 애슐리의 다채로운 미식을
-                                        즐겨보세요.
-                                    </dd>
-                                </dl>
-                            </div>
-                            <div class="swiper-slide app-con">
-                                <figure><img src="./img/app-pic6.jpg" alt="" /></figure>
-                                <dl class="app-txt">
-                                    <dt>멤버십 혜택</dt>
-                                    <dd>
-                                        애슐리 멤버십 가입 시 다양한 전용 혜택이 주어집니다. 멤버십 회원 등록을 통해
-                                        특별 할인, 생일 혜택, 연말 이벤트 참여 기회 등 다양한 혜택을 누려보세요.
-                                    </dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="btn-next"><i class="hidden">다음</i></button>
-                </div>
-            </section>
-            <!-- //e: app -->
-
-            <!-- s: vip -->
-            <section class="vip">
-                <div class="inner">
-                    <div class="sec-title" data-aos="fade-down">
-                        <strong>앱 사용 혜택</strong>
-                        <h3>VIP 등급이면 우선 예약 & 테이블 세팅 서비스!</h3>
-                    </div>
-                    <ul class="vip-service">
-                        <li data-aos="fade-up" data-aos-delay="200">
-                            <dl>
-                                <dt>당일 예약 가능</dt>
-                                <dd>VIP는 전용 예약 시스템을 통해 당일에도, 빅데이에도 예약이 가능합니다.</dd>
-                            </dl>
-                        </li>
-                        <li data-aos="fade-up" data-aos-delay="350">
-                            <dl>
-                                <dt>테이블 세팅 서비스</dt>
-                                <dd>VIP만을 위해 정갈히 차려진 테이블 세팅으로 대접받는 느낌을 느껴보세요.</dd>
-                            </dl>
-                        </li>
-                        <li data-aos="fade-up" data-aos-delay="500">
-                            <dl>
-                                <dt>웰컴메뉴 서비스</dt>
-                                <dd>VIP만의 특별한 웰컴 메뉴 서비스로 더욱 풍성한 식사를 즐겨보세요.</dd>
-                            </dl>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <!-- //e: vip -->
-
-            <!-- s: reward -->
-            <section class="reward">
-                <div class="inner">
-                    <div class="sec-title" data-aos="fade-down" data-aos-delay="100">
-                        <strong>앱 사용 혜택</strong>
-                        <h3>등급별 다양한 혜택을 만나보세요!</h3>
-                    </div>
-                    <div class="tab-con">
-                        <ul class="tab-item reward-tab">
-                            <li data-aos="fade-up" data-aos-delay="300"><a href="#">SILVER</a></li>
-                            <li data-aos="fade-up" data-aos-delay="400"><a href="#">GOLD</a></li>
-                            <li data-aos="fade-up" data-aos-delay="500"><a href="#">VIP</a></li>
-                        </ul>
-                    </div>
-                    <div class="reward-con">
-                        <div class="reward-list">
-                            <ul class="condition" data-aos="fade-up" data-aos-delay="600">
-                                <li>
-                                    *직전 6개월 동안 구매금액이 <b>7만원 미만</b>인 경우 SILVER 등급 혜택을 받으실 수
-                                    있습니다.
-                                </li>
-                                <li>*등급 유지기간은 <b>6개월</b>입니다.</li>
-                            </ul>
-                            <ul class="reward-item">
-                                <li data-aos="fade-up" data-aos-delay="800">
-                                    <figure><img src="./img/reward-ico1.png" alt="" /></figure>
-                                    <p>
-                                        결제 금액의 <b>2%</b> 애슐리 캐시 리워드 적립<br /><i
-                                            >(다음날 오전 적립, 유효기간 6개월)</i
-                                        >
-                                    </p>
-                                </li>
-                                <li data-aos="fade-up" data-aos-delay="900">
-                                    <figure><img src="./img/reward-ico2.png" alt="" /></figure>
-                                    <p>결제 시 E-포인트 <b>0.3%</b> 적립</p>
-                                </li>
-                                <li data-aos="fade-up" data-aos-delay="1000">
-                                    <figure><img src="./img/reward-ico3.png" alt="" /></figure>
-                                    <p>매월 홈스토랑 <b>10%</b> 할인쿠폰 지급</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="reward-list">
-                            <ul class="condition">
-                                <li>
-                                    *직전 6개월 동안 구매금액이 <b>7만원 미만</b>인 경우 SILVER 등급 혜택을 받으실 수
-                                    있습니다.
-                                </li>
-                                <li>*등급 유지기간은 <b>6개월</b>입니다.</li>
-                            </ul>
-                            <ul class="reward-item">
-                                <li>
-                                    <figure><img src="./img/reward-ico1.png" alt="" /></figure>
-                                    <p>
-                                        결제 금액의 <b>4%</b> 애슐리 캐시 리워드 적립<br /><i
-                                            >(다음날 오전 적립, 유효기간 6개월)</i
-                                        >
-                                    </p>
-                                </li>
-                                <li>
-                                    <figure><img src="./img/reward-ico2.png" alt="" /></figure>
-                                    <p>결제 시 E-포인트 <b>0.3%</b> 적립</p>
-                                </li>
-                                <li>
-                                    <figure><img src="./img/reward-ico3.png" alt="" /></figure>
-                                    <p>매월 홈스토랑 <b>15%</b> 할인쿠폰 지급</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="reward-list">
-                            <ul class="condition">
-                                <li>
-                                    *직전 6개월 동안 구매금액이 <b>7만원 미만</b>인 경우 SILVER 등급 혜택을 받으실 수
-                                    있습니다.
-                                </li>
-                                <li>*등급 유지기간은 <b>6개월</b>입니다.</li>
-                            </ul>
-                            <ul class="reward-item">
-                                <li>
-                                    <figure><img src="./img/reward-ico1.png" alt="" /></figure>
-                                    <p>
-                                        결제 금액의 <b>5%</b> 애슐리 캐시 리워드 적립<br /><i
-                                            >(다음날 오전 적립, 유효기간 6개월)</i
-                                        >
-                                    </p>
-                                </li>
-                                <li>
-                                    <figure><img src="./img/reward-ico2.png" alt="" /></figure>
-                                    <p>결제 시 E-포인트 <b>0.3%</b> 적립</p>
-                                </li>
-                                <li>
-                                    <figure><img src="./img/reward-ico3.png" alt="" /></figure>
-                                    <p>매월 홈스토랑 <b>20%</b> 할인쿠폰 지급</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <ul class="details" data-aos="fade-up" data-aos-delay="900">
-                        <li>
-                            <b>*등급산정</b>은 직전 6개월 동안의 ‘오프라인 매장 + 온라인 홈스토랑’ 실 구매금액을
-                            기준으로 부여됩니다.
-                        </li>
-                        <li>- 홈스토랑은 ‘구매확정 금액’으로 반영됩니다.</li>
-                        <li>-할인 및 리워드 사용 금액은 포함되지 않습니다.</li>
-                        <li>-홈스토랑은 애슐리 앱/공식 홈페이지에서 구매한 금액만 반영됩니다.(N페이 결제시 미반영)</li>
-                        <li>
-                            <b>-등급유지기간</b>은 기본 6개월이며, 등급 유지기간 중에 더 높은 등금의 기준을 달성하면
-                            다음날 즉시 등급이 변경됩니다.
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <!-- //e: reward -->
-
-            <!-- s: store -->
-            <section class="store">
-                <div class="inner">
-                    <div class="store-wrap">
-                        <div class="store-txt">
-                            <strong data-aos="fade-down" data-aos-delay="200">외식하기 전 꼭 챙길 것!</strong>
-                            <h4 data-aos="fade-up" data-aos-delay="400">
-                                애슐리캐시 충전하기 <b>2만원 즉시 리워드</b> 받기
-                            </h4>
-                        </div>
-                        <div class="app-store">
-                            <a
-                                class="btn-more"
-                                data-aos="fade-up"
-                                data-aos-delay="400"
-                                href="https://play.google.com/store/apps/details?id=kr.co.eland.eat&pcampaignid=web_share"
-                                >PLAY STORE<span class="btn-more-con"
-                                    ><span class="btn-more-item"></span><span class="btn-more-item"></span
-                                    ><span class="btn-more-item"></span><span class="btn-more-item"></span></span
-                            ></a>
-                            <a
-                                class="btn-more"
-                                data-aos="fade-up"
-                                data-aos-delay="500"
-                                href="https://apps.apple.com/kr/app/%EC%95%A0%EC%8A%90%EB%A6%AC-ashley/id1098518587"
-                                >APP STORE<span class="btn-more-con"
-                                    ><span class="btn-more-item"></span><span class="btn-more-item"></span
-                                    ><span class="btn-more-item"></span><span class="btn-more-item"></span></span
-                            ></a>
-                            <figure><img src="./img/character-pic.svg" alt="" /></figure>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- //e: store -->
-        </main>
-
-        <footer id="footer">
-            <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
-            <div class="inner">
-                <div class="foot-list">
-                    <ul class="foot-info">
-                        <li>
-                            <a href="https://www.myashley.co.kr/Popup/per_info_pop_240528.html">개인정보처리방침</a>
-                        </li>
-                        <li>
-                            <a href="https://www.myashley.co.kr/Popup/image_info_pop.aspx"
-                                >영상정보처리기기운영·관리방침</a
-                            >
-                        </li>
-                        <li><a href="https://www.myashley.co.kr/Popup/Join_Agree_Pop20160418.aspx">이용약관</a></li>
-                    </ul>
-
-                    <div class="family">
-                        <button type="button" class="btn-family">FAMILY SITE</button>
-                        <ul class="family-list">
-                            <li><a href="#">리미니</a></li>
-                            <li><a href="#">피자몰</a></li>
-                            <li><a href="#">더카페</a></li>
-                            <li><a href="#">아시아문</a></li>
-                            <li><a href="#">홈스트랑</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="foot-con">
-                    <address>
-                        <strong>(주) 이랜드이츠</strong>
-                        <p>
-                            서울시 금천구 가산디지털1로 186, 213호(가산동) 제이플라츠 | 대표이사 : 황성윤<br />
-                            매장 이용관련 문의 및 불편사항 : 1577-1259 | 이메일 : elandfood@eland.co.kr<br />
-                            호스팅 서비스 제공자 : 라드씨엔에스
-                        </p>
-                        <p>Copyright &copy; 2013 ASHLEY</p>
-                    </address>
-                    <div class="accredit">
-                        <figure><img src="./img/isms.svg" alt="isms 인증마크" /></figure>
-                        <p>
-                            인증범위: 이랜드이츠 온라인 서비스<br />
-                            (애슐리, 캠페인서비스, 이랜드이츠, 자연별곡, 더카페)<br />
-                            인증기간: 2022. 08. 17 ~ 2025. 08. 16
-                        </p>
-                    </div>
-                </div>
+      <!-- s: app -->
+      <section class="app" id="app">
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down" data-aos-delay="100">
+            <strong>앱 사용 혜택</strong>
+            <h3>앱 하나로 즐기는 애슐리의 모든 혜택!</h3>
+          </div>
+          <ul class="app-tab" data-aos="fade-down" data-aos-delay="200">
+            <li class="on">매장 이용</li>
+            <li>할인 정보</li>
+            <li>포인트 적립</li>
+            <li>전용 쿠폰</li>
+            <li>신메뉴 알림</li>
+            <li>멤버십 혜택</li>
+          </ul>
+        </div>
+        <div class="app-slider-wrap" data-aos="fade-up" data-aos-delay="400">
+          <div class="app-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide app-con">
+                <figure><img src="./img/app-pic1.jpg" alt="" /></figure>
+                <dl class="app-txt">
+                  <dt>매장 이용</dt>
+                  <dd>
+                    애슐리 앱에서는 원하는 매장의 예약을 빠르게 할 수 있습니다.
+                    예약한 시간에 맞춰 방문하면, 대기 시간 없이 바로 식사를 즐길
+                    수 있어 바쁜 일상 속에서도 편리하게 애슐리를 경험할 수
+                    있습니다.
+                  </dd>
+                </dl>
+              </div>
+              <div class="swiper-slide app-con">
+                <figure><img src="./img/app-pic2.jpg" alt="" /></figure>
+                <dl class="app-txt">
+                  <dt>할인 정보</dt>
+                  <dd>
+                    앱을 통해 최신 할인 정보와 특별 프로모션을 실시간으로 받아볼
+                    수 있습니다. 다양한 이벤트와 계절별 프로모션을 확인하여,
+                    원하는 때에 추가 혜택을 누르세요.
+                  </dd>
+                </dl>
+              </div>
+              <div class="swiper-slide app-con">
+                <figure><img src="./img/app-pic3.jpg" alt="" /></figure>
+                <dl class="app-txt">
+                  <dt>포인트 적립</dt>
+                  <dd>
+                    식사할 때마다 포인트가 적립되며, 적립된 포인트는 다양한
+                    방식으로 사용할 수 있습니다. 포인트 잔액과 사용 가능한 할인
+                    쿠폰을 통해 알뜰한 식사를 즐겨보세요.
+                  </dd>
+                </dl>
+              </div>
+              <div class="swiper-slide app-con">
+                <figure><img src="./img/app-pic4.jpg" alt="" /></figure>
+                <dl class="app-txt">
+                  <dt>전용 쿠폰</dt>
+                  <dd>
+                    앱 사용자에게만 제공되는 한정 쿠폰이 정기적으로 올라옵니다.
+                    매장에서 받을 수 없는 앱 전용 쿠폰으로 할인 혜택을 누리고,
+                    시즌마다 새로운 쿠폰 혜택을 만나보세요.
+                  </dd>
+                </dl>
+              </div>
+              <div class="swiper-slide app-con">
+                <figure><img src="./img/app-pic5.jpg" alt="" /></figure>
+                <dl class="app-txt">
+                  <dt>신메뉴 알림</dt>
+                  <dd>
+                    애슐리에서 새롭게 선보이는 메뉴와 계절별 한정 메뉴를 앱
+                    알림으로 가장 먼저 확인할 수 있습니다. 계절별 다양한 메뉴를
+                    통해 애슐리의 다채로운 미식을 즐겨보세요.
+                  </dd>
+                </dl>
+              </div>
+              <div class="swiper-slide app-con">
+                <figure><img src="./img/app-pic6.jpg" alt="" /></figure>
+                <dl class="app-txt">
+                  <dt>멤버십 혜택</dt>
+                  <dd>
+                    애슐리 멤버십 가입 시 다양한 전용 혜택이 주어집니다. 멤버십
+                    회원 등록을 통해 특별 할인, 생일 혜택, 연말 이벤트 참여 기회
+                    등 다양한 혜택을 누려보세요.
+                  </dd>
+                </dl>
+              </div>
             </div>
-        </footer>
+          </div>
+          <button class="btn-next"><i class="hidden">다음</i></button>
+        </div>
+      </section>
+      <!-- //e: app -->
 
-        <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
-    </body>
+      <!-- s: vip -->
+      <section class="vip">
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down">
+            <strong>앱 사용 혜택</strong>
+            <h3>VIP 등급이면 우선 예약 & 테이블 세팅 서비스!</h3>
+          </div>
+          <ul class="vip-service">
+            <li data-aos="fade-up" data-aos-delay="200">
+              <dl>
+                <dt>당일 예약 가능</dt>
+                <dd>
+                  VIP는 전용 예약 시스템을 통해 당일에도, 빅데이에도 예약이
+                  가능합니다.
+                </dd>
+              </dl>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="300">
+              <dl>
+                <dt>테이블 세팅 서비스</dt>
+                <dd>
+                  VIP만을 위해 정갈히 차려진 테이블 세팅으로 대접받는 느낌을
+                  느껴보세요.
+                </dd>
+              </dl>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="400">
+              <dl>
+                <dt>웰컴메뉴 서비스</dt>
+                <dd>
+                  VIP만의 특별한 웰컴 메뉴 서비스로 더욱 풍성한 식사를
+                  즐겨보세요.
+                </dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- //e: vip -->
+
+      <!-- s: reward -->
+      <section class="reward">
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down" data-aos-delay="100">
+            <strong>앱 사용 혜택</strong>
+            <h3>등급별 다양한 혜택을 만나보세요!</h3>
+          </div>
+          <div class="tab-con">
+            <ul class="tab-item reward-tab">
+              <li data-aos="fade-up" data-aos-delay="300">
+                <a href="#">SILVER</a>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="400">
+                <a href="#">GOLD</a>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="500">
+                <a href="#">VIP</a>
+              </li>
+            </ul>
+          </div>
+          <div class="reward-con">
+            <div class="reward-list">
+              <ul class="condition" data-aos="fade-up" data-aos-delay="600">
+                <li>
+                  *직전 6개월 동안 구매금액이 <b>7만원 미만</b>인 경우 SILVER
+                  등급 혜택을 받으실 수 있습니다.
+                </li>
+                <li>*등급 유지기간은 <b>6개월</b>입니다.</li>
+              </ul>
+              <ul class="reward-item">
+                <li data-aos="fade-up" data-aos-delay="800">
+                  <figure><img src="./img/reward-ico1.png" alt="" /></figure>
+                  <p>
+                    결제 금액의 <b>2%</b> 애슐리 캐시 리워드 적립<br /><i
+                      >(다음날 오전 적립, 유효기간 6개월)</i
+                    >
+                  </p>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="900">
+                  <figure><img src="./img/reward-ico2.png" alt="" /></figure>
+                  <p>결제 시 E-포인트 <b>0.3%</b> 적립</p>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="1000">
+                  <figure><img src="./img/reward-ico3.png" alt="" /></figure>
+                  <p>매월 홈스토랑 <b>10%</b> 할인쿠폰 지급</p>
+                </li>
+              </ul>
+            </div>
+            <div class="reward-list">
+              <ul class="condition">
+                <li>
+                  *직전 6개월 동안 구매금액이 <b>7만원 미만</b>인 경우 SILVER
+                  등급 혜택을 받으실 수 있습니다.
+                </li>
+                <li>*등급 유지기간은 <b>6개월</b>입니다.</li>
+              </ul>
+              <ul class="reward-item">
+                <li>
+                  <figure><img src="./img/reward-ico1.png" alt="" /></figure>
+                  <p>
+                    결제 금액의 <b>4%</b> 애슐리 캐시 리워드 적립<br /><i
+                      >(다음날 오전 적립, 유효기간 6개월)</i
+                    >
+                  </p>
+                </li>
+                <li>
+                  <figure><img src="./img/reward-ico2.png" alt="" /></figure>
+                  <p>결제 시 E-포인트 <b>0.3%</b> 적립</p>
+                </li>
+                <li>
+                  <figure><img src="./img/reward-ico3.png" alt="" /></figure>
+                  <p>매월 홈스토랑 <b>15%</b> 할인쿠폰 지급</p>
+                </li>
+              </ul>
+            </div>
+            <div class="reward-list">
+              <ul class="condition">
+                <li>
+                  *직전 6개월 동안 구매금액이 <b>7만원 미만</b>인 경우 SILVER
+                  등급 혜택을 받으실 수 있습니다.
+                </li>
+                <li>*등급 유지기간은 <b>6개월</b>입니다.</li>
+              </ul>
+              <ul class="reward-item">
+                <li>
+                  <figure><img src="./img/reward-ico1.png" alt="" /></figure>
+                  <p>
+                    결제 금액의 <b>5%</b> 애슐리 캐시 리워드 적립<br /><i
+                      >(다음날 오전 적립, 유효기간 6개월)</i
+                    >
+                  </p>
+                </li>
+                <li>
+                  <figure><img src="./img/reward-ico2.png" alt="" /></figure>
+                  <p>결제 시 E-포인트 <b>0.3%</b> 적립</p>
+                </li>
+                <li>
+                  <figure><img src="./img/reward-ico3.png" alt="" /></figure>
+                  <p>매월 홈스토랑 <b>20%</b> 할인쿠폰 지급</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="details" data-aos="fade-up" data-aos-delay="900">
+            <li>
+              <b>*등급산정</b>은 직전 6개월 동안의 ‘오프라인 매장 + 온라인
+              홈스토랑’ 실 구매금액을 기준으로 부여됩니다.
+            </li>
+            <li>- 홈스토랑은 ‘구매확정 금액’으로 반영됩니다.</li>
+            <li>-할인 및 리워드 사용 금액은 포함되지 않습니다.</li>
+            <li>
+              -홈스토랑은 애슐리 앱/공식 홈페이지에서 구매한 금액만
+              반영됩니다.(N페이 결제시 미반영)
+            </li>
+            <li>
+              <b>-등급유지기간</b>은 기본 6개월이며, 등급 유지기간 중에 더 높은
+              등금의 기준을 달성하면 다음날 즉시 등급이 변경됩니다.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- //e: reward -->
+
+      <!-- s: store -->
+      <section class="store">
+        <div class="inner">
+          <div class="store-wrap">
+            <div class="store-txt">
+              <strong data-aos="fade-down" data-aos-delay="200"
+                >외식하기 전 꼭 챙길 것!</strong
+              >
+              <h4 data-aos="fade-up" data-aos-delay="400">
+                애슐리캐시 충전하기 <b>2만원 즉시 리워드</b> 받기
+              </h4>
+            </div>
+            <div class="app-store">
+              <a
+                class="btn-more"
+                data-aos="fade-up"
+                data-aos-delay="400"
+                href="https://play.google.com/store/apps/details?id=kr.co.eland.eat&pcampaignid=web_share"
+                >PLAY STORE<span class="btn-more-con"
+                  ><span class="btn-more-item"></span
+                  ><span class="btn-more-item"></span
+                  ><span class="btn-more-item"></span
+                  ><span class="btn-more-item"></span></span
+              ></a>
+              <a
+                class="btn-more"
+                data-aos="fade-up"
+                data-aos-delay="500"
+                href="https://apps.apple.com/kr/app/%EC%95%A0%EC%8A%90%EB%A6%AC-ashley/id1098518587"
+                >APP STORE<span class="btn-more-con"
+                  ><span class="btn-more-item"></span
+                  ><span class="btn-more-item"></span
+                  ><span class="btn-more-item"></span
+                  ><span class="btn-more-item"></span></span
+              ></a>
+              <figure><img src="./img/character-pic.svg" alt="" /></figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: store -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a
+                href="https://www.myashley.co.kr/Popup/per_info_pop_240528.html"
+                >개인정보처리방침</a
+              >
+            </li>
+            <li>
+              <a href="https://www.myashley.co.kr/Popup/image_info_pop.aspx"
+                >영상정보처리기기운영·관리방침</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.myashley.co.kr/Popup/Join_Agree_Pop20160418.aspx"
+                >이용약관</a
+              >
+            </li>
+          </ul>
+
+          <div class="family">
+            <button type="button" class="btn-family">FAMILY SITE</button>
+            <ul class="family-list">
+              <li><a href="#">리미니</a></li>
+              <li><a href="#">피자몰</a></li>
+              <li><a href="#">더카페</a></li>
+              <li><a href="#">아시아문</a></li>
+              <li><a href="#">홈스트랑</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <strong>(주) 이랜드이츠</strong>
+            <p>
+              서울시 금천구 가산디지털1로 186, 213호(가산동) 제이플라츠 |
+              대표이사 : 황성윤<br />
+              매장 이용관련 문의 및 불편사항 : 1577-1259 | 이메일 :
+              elandfood@eland.co.kr<br />
+              호스팅 서비스 제공자 : 라드씨엔에스
+            </p>
+            <p>Copyright &copy; 2013 ASHLEY</p>
+          </address>
+          <div class="accredit">
+            <figure><img src="./img/isms.svg" alt="isms 인증마크" /></figure>
+            <p>
+              인증범위: 이랜드이츠 온라인 서비스<br />
+              (애슐리, 캠페인서비스, 이랜드이츠, 자연별곡, 더카페)<br />
+              인증기간: 2022. 08. 17 ~ 2025. 08. 16
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
 </html>
