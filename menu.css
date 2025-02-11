@@ -1,0 +1,486 @@
+@charset 'utf-8';
+
+.menu-title {
+  margin: 0 auto;
+  text-align: center;
+  /* width: 70.5rem; */
+  width: 60%;
+  margin-top: 12rem;
+  word-break: keep-all;
+}
+
+.menu-title h3 {
+  font: 13.5rem/0.8 "Dancing Script", sans-serif;
+  font-size: clamp(8.5rem, 7.0313vw, 13.5rem);
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.menu-title p {
+  margin-top: 6%;
+}
+
+.menu-tab {
+  display: flex;
+  /* gap: 2.5rem; */
+  gap: 1.8939%;
+  justify-content: center;
+  margin-top: 6.5rem;
+  flex-shrink: 0;
+  overflow: auto;
+}
+
+.menu-tab li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 11rem;
+  min-width: 9.6rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+
+  border: 2px solid var(--main-color);
+}
+
+.menu-tab li a::before {
+  content: "";
+  display: block;
+  width: 2.6rem;
+  aspect-ratio: 1/1;
+  background: no-repeat 50%;
+  margin: 0.2rem auto 0 auto;
+  transition: 0.4s;
+}
+
+.menu-tab li:nth-child(1) a::before {
+  background-image: url(../img/ico-menu1-m.png);
+}
+.menu-tab li:hover:nth-child(1) a::before,
+.menu-tab li.on:nth-child(1) a::before {
+  background-image: url(../img/ico-menu1-w.png);
+}
+.menu-tab li:hover:nth-child(2) a::before,
+.menu-tab li.on:nth-child(2) a::before {
+  background-image: url(../img/ico-menu2-w.png);
+}
+.menu-tab li:nth-child(2) a::before {
+  background-image: url(../img/ico-menu2-m.png);
+}
+.menu-tab li:hover:nth-child(3) a::before,
+.menu-tab li.on:nth-child(3) a::before {
+  background-image: url(../img/ico-menu3-w.png);
+}
+.menu-tab li:nth-child(3) a::before {
+  background-image: url(../img/ico-menu3-m.png);
+}
+.menu-tab li:hover:nth-child(4) a::before,
+.menu-tab li.on:nth-child(4) a::before {
+  background-image: url(../img/ico-menu4-w.png);
+}
+.menu-tab li:nth-child(4) a::before {
+  background-image: url(../img/ico-menu4-m.png);
+}
+.menu-tab li:hover:nth-child(4) a::before,
+.menu-tab li.on:nth-child(4) a::before {
+  background-image: url(../img/ico-menu4-w.png);
+}
+.menu-tab li:nth-child(5) a::before {
+  background-image: url(../img/ico-menu5-m.png);
+}
+.menu-tab li:hover:nth-child(5) a::before,
+.menu-tab li.on:nth-child(5) a::before {
+  background-image: url(../img/ico-menu5-w.png);
+}
+
+.menu-tab li.on,
+.menu-tab li:hover {
+  background: var(--main-color);
+  transition: 0.6s;
+}
+
+.menu-tab a {
+  margin-top: 0.2rem;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.menu-tab li.on a {
+  color: var(--white100);
+}
+
+.menu-tab li:hover a {
+  color: var(--white100);
+}
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(27.5rem, 1fr));
+  /* margin-top: 8.5rem; */
+  margin-top: 4.4271rem;
+  gap: 2.6042vw;
+}
+
+.menu-list li figure {
+  width: 100%;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.menu-list li:hover img {
+  transform: scale(110%);
+}
+
+.menu-list li p {
+  margin-top: 1.5rem;
+  padding: 0 2rem;
+  font: 2rem/1.3 "Pretendard", sans-serif;
+  font-weight: 700;
+  color: var(--title-color);
+  word-break: keep-all;
+  text-align: center;
+}
+
+.menu-con .btn-more {
+  margin: 9.0909% auto 0 auto;
+  background: var(--main-color);
+  color: var(--white100);
+}
+
+.menu-con .btn-more:hover {
+  color: var(--main-color);
+}
+
+.menu-con .btn-more::after {
+  background-image: url(../img/arrow-w-right.png);
+}
+
+.menu-con .btn-more:hover::after {
+  content: "";
+  background-image: url(../img/arrow-m-right.png);
+}
+
+.menu-con .btn-more-item {
+  background: var(--white100);
+}
+
+.tip .sec-title {
+  margin-top: 10.4167vw;
+}
+
+.tip-list {
+  margin-top: 7.5758%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.tip-list li {
+  /* border: 1px solid #000; */
+  width: 31.5rem;
+  aspect-ratio: 1/1.6825;
+  padding: 3rem;
+  word-break: keep-all;
+  border-radius: 10px;
+  overflow: hidden;
+  background: no-repeat 50% / cover;
+  position: relative;
+  text-align: center;
+}
+
+.tip-list li:hover {
+  justify-content: center;
+}
+
+.tip-list li:nth-child(1) {
+  background-image: url(../img/tip-pic1.jpg);
+}
+.tip-list li:nth-child(2) {
+  background-image: url(../img/tip-pic2.jpg);
+}
+.tip-list li:nth-child(3) {
+  background-image: url(../img/tip-pic3.jpg);
+}
+.tip-list li:nth-child(4) {
+  background-image: url(../img/tip-pic4.jpg);
+}
+
+.tip-list li::after {
+  content: "";
+  transition: 0.7s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(14, 33, 47, 0),
+    rgba(14, 33, 47, 0),
+    rgba(14, 33, 47, 0.7)
+  );
+}
+
+.tip-list li:hover::after {
+  content: "";
+  height: 100%;
+  background: var(--main-color70);
+}
+
+.tip-list li strong {
+  /* font-size: 2.8rem; */
+  font-size: clamp(2.4rem, 8.8888%, 2.8rem);
+  font-weight: 700;
+  color: var(--white100);
+  position: relative;
+  z-index: 1;
+  top: 90%;
+  transition: 0.4s;
+}
+
+.tip-list li p {
+  margin-top: 2rem;
+  font-weight: 600;
+  color: var(--white50);
+  position: relative;
+  z-index: 1;
+  top: 120%;
+}
+
+.tip-list li:hover strong {
+  /* font-size: 3rem; */
+  font-size: clamp(2.6rem, 9%, 3rem);
+  top: 35%;
+}
+
+.tip-list li:hover p {
+  top: 35%;
+  transition: 0.6s;
+}
+
+.allergie-slider-wrap {
+  width: 100%;
+}
+
+.allergie-slider {
+  width: 100%;
+}
+
+.allergie .swiper-wrapper {
+  width: 100%;
+}
+
+.allergie-txt {
+  margin-top: 10.4167vw;
+}
+
+.allergie-txt p {
+  margin-top: 2.2727vw;
+  /* margin-top: 3rem; */
+  width: 50%;
+}
+
+.allergie-slider {
+  margin-top: 7.3rem;
+}
+
+.allergie-item {
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.allergie-item::after {
+  transition: 0.4s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--main-color70);
+  opacity: 0;
+}
+
+.allergie-item:hover::after {
+  opacity: 1;
+}
+
+.allergie-item strong {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  color: var(--white100);
+  text-align: center;
+  opacity: 0;
+  transition: 0.4s;
+  /* font-size: 3rem; */
+  font-size: clamp(2.4rem, 14.7783%, 3rem);
+  font-weight: 700;
+  z-index: 1;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.allergie-item i {
+  font-size: 1.8rem;
+  font-size: clamp(1.5rem, 8.867%, 1.8rem);
+  font-weight: 400;
+}
+
+.allergie-item:hover strong {
+  opacity: 1;
+}
+
+.allergie-slider-wrap .swiper-pagination {
+  position: relative; /* 변경: absolute에서 relative로 */
+  bottom: -5rem; /* 필요에 따라 조정 */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem;
+}
+
+.price .sec-title {
+  margin-top: 10.4167vw;
+}
+
+.price .tab-con {
+  margin-top: 5vw;
+  overflow: auto;
+}
+
+.price-con-item {
+  /* margin-top: 7.7rem; */
+  margin-top: 3.0104vw;
+  text-align: center;
+}
+
+.price-con-item thead {
+  background: var(--main-color10);
+  border-top: 2px solid var(--main-color);
+  border-bottom: 2px solid var(--black20);
+  height: 7rem;
+}
+
+.price-con-item tbody tr {
+  border-bottom: 2px solid var(--black20);
+  height: 13.7rem;
+}
+
+.price-con-item th,
+.price-con-item td {
+  vertical-align: middle;
+}
+
+.price-con-item tr th,
+.price-con-item tr td:nth-child(1) {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.price-con-item tr td:nth-child(1),
+.price-con-item tr th:nth-child(1) {
+  border-right: 2px solid var(--black20);
+}
+
+.details {
+  display: block;
+  margin: 4.167vw 0;
+}
+
+.details li {
+  font-size: 1.4rem;
+  width: 55%;
+  word-break: keep-all;
+  color: var(--black40);
+}
+
+.details li strong {
+  font-weight: 700;
+  color: var(--black50);
+}
+
+@media (max-width: 1200px) {
+  .menu-title {
+    width: 80%;
+  }
+
+  .tip .sec-title {
+    margin-top: 10rem;
+  }
+
+  .tip-list {
+    flex-direction: column;
+  }
+
+  .tip-list li {
+    width: 100%;
+    aspect-ratio: 1/0.3333;
+  }
+
+  .tip-list li strong {
+    top: 80%;
+  }
+
+  .tip-list li p {
+    margin-top: 2%;
+  }
+
+  .allergie-txt {
+    margin-top: 10rem;
+  }
+
+  .allergie-txt p {
+    width: 80%;
+  }
+
+  .allergie .view-more {
+    margin-top: 2rem;
+  }
+
+  .price .sec-title {
+    margin-top: 15rem;
+  }
+
+  .details li {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-list {
+    grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+  }
+
+  .tip-list li {
+    width: 100%;
+    aspect-ratio: 1/0.5;
+  }
+
+  .tip-list li:hover strong {
+    top: 8vw;
+  }
+
+  .tip-list li:hover p {
+    top: 8vw;
+  }
+
+  .allergie-txt p {
+    width: 100%;
+  }
+
+  .price .tab-con {
+    margin-top: 4rem;
+  }
+
+  .price-con-item {
+    margin-top: 2rem;
+  }
+
+  .details li {
+    width: 100%;
+  }
+}
